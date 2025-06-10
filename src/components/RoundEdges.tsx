@@ -67,16 +67,18 @@ function RoundEdges({
           </div>
         )}
       </div>
-      {bl_1 && (
-        <div className="transform rotate-90 w-fit z-10">
-          <RoundSvg />
-        </div>
-      )}
-      {br_1 && (
-        <div className="transform rotate-180 w-fit self-end">
-          <RoundSvg />
-        </div>
-      )}
+      <div className={`flex justify-between`}>
+        {bl_1 && (
+          <div className="transform rotate-90 w-fit z-10">
+            <RoundSvg />
+          </div>
+        )}
+        {br_1 && (
+          <div className="transform rotate-180 w-fit self-end z-10">
+            <RoundSvg />
+          </div>
+        )}
+      </div>
     </div>
   );
 }

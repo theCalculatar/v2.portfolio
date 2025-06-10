@@ -5,7 +5,7 @@ import RoundEdges from "./RoundEdges";
 function Navbar() {
   return (
     <div className="overflow-hidden w-full relative h-44">
-      <RoundEdges __className="w-full  rounded-b-2xl" bl_1>
+      <RoundEdges __className="w-full  rounded-b-2xl" bl_1 br_1>
         <div className="h-9 flex justify-between items-center  w-full">
           <RoundEdges tr_0 className="h-9 bg-background px-4 z-10">
             <div className=" flex items-center gap-2 ">
