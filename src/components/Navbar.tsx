@@ -2,11 +2,11 @@ import React from "react";
 import TextFlip from "@/components/TextFlip";
 import RoundEdges from "./RoundEdges";
 
-function Navbar() {
+function Navbar({ className = "" }: { className?: string }) {
   return (
-    <div className="overflow-hidden w-full relative h-44">
+    <div className={`overflow-hidden w-full ${className}`}>
       <RoundEdges __className="w-full  rounded-b-2xl" bl_1 br_1>
-        <div className="h-9 flex justify-between items-center  w-full">
+        <div className="h-9 flex justify-between items-center  w-full ">
           <RoundEdges tr_0 className="h-9 bg-background px-4 z-10">
             <div className=" flex items-center gap-2 ">
               <div className="flex gap-2 items-center">
@@ -18,8 +18,8 @@ function Navbar() {
               </div>
 
               <TextFlip>
-                <p className="text-xm initial text-green-400">Available</p>
-                <p className="text-xm preview hidden text-green-400">
+                <p className="text-xs initial text-green-400">Available</p>
+                <p className="text-xs preview hidden text-green-400">
                   * 2 slots
                 </p>
               </TextFlip>
@@ -39,7 +39,7 @@ function Navbar() {
         </div>
       </RoundEdges>
 
-      <div className="bg-white w-full absolute top-0.5 right-[.5px] left-[.5px] z-0 rounded-b-2xl pt-12 px-4 pb-4 text-black text-sm ">
+      <div className="bg-white w-full absolute top-0.5 right-[.5px] left-[.5px] rounded-b-2xl pt-12 px-4 pb-4 text-black text-sm hidden">
         <div className="grid grid-cols-2 grid-rows-2 gap-4">
           <div className="bg-neutral-200 rounded-md py-2 text-center">
             <TextFlip>
