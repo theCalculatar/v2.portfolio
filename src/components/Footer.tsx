@@ -6,7 +6,7 @@ import Image from "next/image";
 function Footer() {
   return (
     <div className="grid gap-4">
-      <ul className="grid gap-4 grid-cols-2 mt-6">
+      <ul className="grid gap-4 grid-cols-1 sm:grid-cols-2 mt-6">
         <li className="flex justify-between items-center px-6 py-4 rounded-md dark:bg-neutral-800">
           <a href="" className="text-sm">
             LinkedIn
