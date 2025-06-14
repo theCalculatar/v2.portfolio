@@ -1,7 +1,8 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import RoundEdges from "@/components/RoundEdges";
-import { ArrowDown, Star } from "lucide-react";
+import { ArrowDown, Plus, Star } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -201,6 +202,41 @@ export default function Home() {
           );
         })}
       </div>
+
+      <div className="py-4 mt-6 rounded-2xl flex justify-center gap-2 bg-neutral-800 text-center items-center">
+        <h2>FAQ&apos;s </h2>
+        <ArrowDown height={15} width={15} />
+      </div>
+
+      <div className="flex flex-col gap-4 mt-4">
+        {[0, 1, 2].map((faq, index) => {
+          return (
+            <details
+              className="group faq bg-neutral-800 rounded-md text-white px-6 py-4"
+              key={index}
+            >
+              <summary className="flex justify-between items-center cursor-pointer list-none">
+                <h6>Do you provide website maintenance after delivery?</h6>
+                <div className="px-1 rounded-md bg-background">
+                  <Plus
+                    width={15}
+                    className="transition-transform group-open:rotate-45"
+                  />
+                </div>
+              </summary>
+
+              <div className="grid transition-all duration-300 ease-in-out group-open:opacity-100 group-open:scale-y-100 opacity-0 scale-y-0 origin-top text-sm dark:text-gray-300">
+                <p className="mt-2">
+                  While maintenance is not included in the packages, I can offer
+                  ongoing support as an additional service.
+                </p>
+              </div>
+            </details>
+          );
+        })}
+      </div>
+
+      <Footer />
     </div>
   );
 }

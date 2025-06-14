@@ -19,7 +19,7 @@ function Hero() {
       </div>
 
       <h2 className="capitalize max-w-sm flex mt-6 font-light text-3xl text-balance">
-        Your most wildest, Imagination to life.
+        Turning your wildest ideas into reality.
       </h2>
 
       <p className="mt-6">
