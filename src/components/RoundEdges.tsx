@@ -93,6 +93,6 @@ const RoundSvg = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M0 0C0 3.31371 2.68629 6 6 6H0V0Z" fill="black" />
+    <path d="M0 0C0 3.31371 2.68629 6 6 6H0V0Z" fill="var(--background)" />
   </svg>
 );
