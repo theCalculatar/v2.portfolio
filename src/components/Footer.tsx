@@ -7,25 +7,25 @@ function Footer() {
   return (
     <div className="grid gap-4">
       <ul className="grid gap-4 grid-cols-1 sm:grid-cols-2 mt-6">
-        <li className="flex justify-between items-center px-6 py-4 rounded-md dark:bg-neutral-800">
+        <li className="flex justify-between items-center px-6 py-4 rounded-md bg-card-background">
           <a href="" className="text-sm">
             LinkedIn
           </a>
           <Linkedin width={15} height={15} />
         </li>
-        <li className="flex justify-between items-center px-6 py-4 rounded-md dark:bg-neutral-800">
+        <li className="flex justify-between items-center px-6 py-4 rounded-md bg-card-background">
           <a href="" className="text-sm">
             GitHub
           </a>
           <Github width={15} height={15} />
         </li>
-        <li className="flex justify-between items-center px-6 py-4 rounded-md dark:bg-neutral-800">
+        <li className="flex justify-between items-center px-6 py-4 rounded-md bg-card-background">
           <a href="" className="text-sm">
             LinkedIn
           </a>
           <ArrowRight width={18} height={18} />
         </li>
-        <li className="flex justify-between items-center px-6 py-4 rounded-md dark:bg-neutral-800">
+        <li className="flex justify-between items-center px-6 py-4 rounded-md bg-card-background">
           <a href="" className="text-sm">
             LinkedIn
           </a>
@@ -35,7 +35,7 @@ function Footer() {
 
       <a
         href=""
-        className="text-sm px-6 py-4 rounded-md flex justify-between items-center dark:bg-white dark:text-black"
+        className="text-sm px-6 py-4 rounded-md flex justify-between items-center bg-black text-white dark:bg-white dark:text-black"
       >
         <p>Book a Call</p>
         <TextFlip>
@@ -46,7 +46,7 @@ function Footer() {
         </TextFlip>
       </a>
 
-      <div className="p-6 dark:bg-white rounded-2xl dark:text-neutral-600">
+      <div className="p-6 bg-black dark:bg-white rounded-2xl dark:text-neutral-600">
         <div className="flex gap-4 items-center">
           <Image
             src={"/images/lee.jpeg"}
@@ -56,7 +56,9 @@ function Footer() {
             className="rounded-full"
           />
           <div className="flex flex-col ">
-            <p className="text-lg">Alpheus Mabetlela</p>
+            <h6 className="text-lg text-white dark:text-black">
+              Alpheus Mabetlela
+            </h6>
             <p className="text-sm">Software Engineer</p>
           </div>
         </div>
@@ -65,7 +67,7 @@ function Footer() {
 
         <div className="mt-4 grid gap-4 sm:grid-cols-3 sm:text-start">
           <ul className="text-center">
-            <h6 className="my-1 text-black">Pages</h6>
+            <h6 className="my-1 text-white dark:text-black">Pages</h6>
             <li>
               <a href="" className="text-sm">
                 Home
@@ -103,7 +105,7 @@ function Footer() {
           </ul>
 
           <ul className="text-center">
-            <h6 className="my-1 text-black">Utility</h6>
+            <h6 className="my-1 dark:text-black text-white">Utility</h6>
             <li>
               <a href="" className="text-sm">
                 404
@@ -111,7 +113,9 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <p className="text-center text-sm mt-6">&copy; Developed by Alpheus</p>
+        <p className="text-center mt-6 text-white dark:text-black w-full text-xs">
+          &copy; Developed by Alpheus
+        </p>
       </div>
     </div>
   );

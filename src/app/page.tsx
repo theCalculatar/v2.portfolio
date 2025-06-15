@@ -13,7 +13,7 @@ export default function Home() {
       </div>
       <Hero />
 
-      <div className="flex flex-col p-6 mt-4 bg-neutral-800 rounded-2xl gap-2">
+      <div className="flex flex-col p-6 mt-4 bg-card-background rounded-2xl gap-2">
         <p className="text-sm">
           Outstanding creativity & professional service from Dylut.-
         </p>
@@ -53,24 +53,19 @@ export default function Home() {
                 width={15}
                 height={15}
               />
-              <Star
-                fill="amber-500"
-                className="text-amber-500"
-                width={15}
-                height={15}
-              />
+              <Star className="text-amber-500" width={15} height={15} />
             </div>
             <p className="text-sm">Mabetlela Alpheus</p>
           </div>
         </div>
       </div>
 
-      <div className="py-4 mt-6 rounded-2xl flex flex-col items-center justify-center gap-4 bg-neutral-800 text-center ">
-        <h2 className="text-center flex gap-2 place-items-center">
-          Projects <ArrowDown height={15} width={15} />
+      <div className="py-4 mt-6 rounded-2xl flex flex-col  gap-4 ">
+        <h2 className="flex gap-2 justify-start items-center text-xl">
+          Projects <ArrowDown height={15} width={15} className="-rotate-135" />
         </h2>
 
-        <p className="text-sm px-6 text-pretty">
+        <p className="text-sm text-pretty">
           A little something i have worked on over the years. Each one adding to
           a little piece to make a whole me.
         </p>
@@ -112,15 +107,18 @@ export default function Home() {
         `}</style>
       </div>
 
-      <div className="py-4 mt-4 rounded-2xl flex justify-center gap-2 bg-neutral-800 text-center items-center">
-        <h2>Service </h2>
+      <div className="py-4 mt-4 flex items-center gap-2 ">
+        <h2 className="text-lg">What I do? </h2>
         <ArrowDown height={15} width={15} />
       </div>
 
       <div className="flex gap-4 flex-col mt-4 md:flex-row">
         {[0, 1, 2].map((project, key) => {
           return (
-            <div className="bg-neutral-800 rounded-2xl md:max-w-1/3" key={key}>
+            <div
+              className="bg-card-background rounded-2xl md:max-w-1/3"
+              key={key}
+            >
               <RoundEdges className="px-2 bg-background" bl_1 tr_0>
                 <div className="flex gap-1">
                   <Star
@@ -163,8 +161,8 @@ export default function Home() {
         })}
       </div>
 
-      <div className="py-4 mt-6 rounded-2xl flex items-center justify-center gap-2 bg-neutral-800 text-center">
-        <h2>Pricing </h2>
+      <div className="py-4 mt-6 flex items-center gap-2">
+        <h2 className="text-lg">Pricing </h2>
         <ArrowDown height={15} width={15} />
       </div>
 
@@ -172,7 +170,7 @@ export default function Home() {
         {[0, 1, 3].map((key) => {
           return (
             <div
-              className="bg-neutral-800 rounded-2xl md:max-w-1/3 pb-6"
+              className="bg-card-background  rounded-2xl md:max-w-1/3 pb-6"
               key={key}
             >
               <RoundEdges className="px-2 bg-background" bl_1 tr_0>
@@ -194,7 +192,7 @@ export default function Home() {
 
               <a
                 href=""
-                className="py-2 mt-2 dark:text-black text-sm mx-6 bg-white rounded-md flex justify-center"
+                className="py-2 mt-2 text-white bg-black dark:text-black text-sm mx-6 dark:bg-white rounded-md flex justify-center"
               >
                 Start Now
               </a>
@@ -203,8 +201,8 @@ export default function Home() {
         })}
       </div>
 
-      <div className="py-4 mt-6 rounded-2xl flex justify-center gap-2 bg-neutral-800 text-center items-center">
-        <h2>FAQ&apos;s </h2>
+      <div className="py-4 mt-6 rounded-2xl flex gap-2 items-center">
+        <h2 className="text-lg">FAQ&apos;s </h2>
         <ArrowDown height={15} width={15} />
       </div>
 
@@ -212,20 +210,20 @@ export default function Home() {
         {[0, 1, 2].map((faq, index) => {
           return (
             <details
-              className="group faq bg-neutral-800 rounded-md text-white px-6 py-4"
+              className="group faq bg-card-background rounded-md px-6 py-4"
               key={index}
             >
               <summary className="flex justify-between items-center cursor-pointer list-none">
                 <h6>Do you provide website maintenance after delivery?</h6>
-                <div className="px-1 rounded-md bg-background">
+                <div className="px-1 rounded-md bg-neutral-800">
                   <Plus
                     width={15}
-                    className="transition-transform group-open:rotate-45"
+                    className="transition-transform group-open:rotate-45 text-white"
                   />
                 </div>
               </summary>
 
-              <div className="grid transition-all duration-300 ease-in-out group-open:opacity-100 group-open:scale-y-100 opacity-0 scale-y-0 origin-top text-sm dark:text-gray-300">
+              <div className="grid transition-all duration-300 ease-in-out group-open:opacity-100 group-open:scale-y-100 opacity-0 scale-y-0 origin-top text-sm">
                 <p className="mt-2">
                   While maintenance is not included in the packages, I can offer
                   ongoing support as an additional service.
