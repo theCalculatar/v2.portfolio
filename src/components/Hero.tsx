@@ -13,14 +13,16 @@ function Hero() {
           className="rounded-full"
         />
         <div className="flex flex-col">
-          <h6 className="text-lg text-black dark:text-white">Alpheus Mabetlela</h6>
+          <h6 className="text-lg text-black dark:text-white">
+            Alpheus Mabetlela
+          </h6>
           <p className="text-sm">Software Engineer</p>
         </div>
       </div>
 
-      <h2 className="capitalize max-w-sm flex mt-6 font-light text-3xl text-balance">
+      <h1 className="capitalize max-w-sm flex mt-6 font-light text-3xl text-balance">
         Turning your wildest ideas into reality.
-      </h2>
+      </h1>
 
       <p className="mt-6">
         Hi, I build web applications with clean code, smooth user experiences,
@@ -36,13 +38,11 @@ function Hero() {
         </a>
         <a
           href=""
-          className="py-2 px-4 rounded-md text-sm bg dark:bg-neutral-950 bg-zinc-300 w-full"
+          className="py-2 px-4 rounded-md text-sm bg bg-background w-full"
         >
           View Work
         </a>
       </div>
-
-      
     </div>
   );
 }

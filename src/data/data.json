@@ -1,0 +1,65 @@
+{
+  "slots": 2,
+  "social": [
+    {
+      "name": "LinkedIn",
+      "url": "https://LinkedIn.com"
+    },
+    { "name": "GitHub", "url": "https://github.com" }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "preview": "/images/lee.jpeg",
+      "name": "Hanssen",
+      "description": "A modern, Scandinavian-inspired portfolio website showcasing Hanssen’s handcrafted furniture collections, blending clean aesthetics with seamless functionality.",
+      "github": "https://github.com",
+      "demo": "https://github.com",
+      "date": "2025",
+      "about": "Hanssen’s portfolio website was designed to highlight their exquisite Scandinavian furniture collections. The site embraces minimalist design principles, reflecting the brand’s ethos of simplicity and elegance. Built with Framer, it features a visually engaging layout that balances stunning imagery with intuitive navigation.",
+      "images": ["/images/lee.jpeg", "/images/lee.jpeg", "/images/lee.jpeg"]
+    },
+    {
+      "id": "2",
+      "preview": "/images/lee.jpeg",
+      "name": "sum project",
+      "description": "Some long ass description goes here",
+      "github": "https://github.com",
+      "demo": "https://github.com"
+    }
+  ],
+  "services": [
+    {
+      "name": "Design",
+      "description": "Some long ass description goes here"
+    },
+    {
+      "name": "Design",
+      "description": "Some long ass description goes here"
+    },
+    {
+      "name": "Design",
+      "description": "Some long ass description goes here"
+    }
+  ],
+  "pricing": [
+    {
+      "title": "Landing page",
+      "price": 1233,
+      "description": "Some long ass description goes here",
+      "items": ["Design + Development", "1 week", "NextJs"]
+    },
+    {
+      "title": "Landing page",
+      "price": 1233,
+      "description": "Some long ass description goes here",
+      "items": ["Design + Development", "1 week", "NextJs"]
+    },
+    {
+      "title": "Landing page",
+      "price": 1233,
+      "description": "Some long ass description goes here",
+      "items": ["Design + Development", "1 week", "NextJs"]
+    }
+  ]
+}

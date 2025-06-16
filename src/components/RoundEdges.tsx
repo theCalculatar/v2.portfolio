@@ -36,6 +36,9 @@ function RoundEdges({
   if (tl_0 && br_1) {
     _rounded.borderRadius = "0 1rem 0 1rem";
   }
+  if (bl_0 && tr_1) {
+    _rounded.borderRadius = "1rem 0 1rem 0";
+  }
 
   return (
     <div className={`w-fit text-sm flex flex-col ${__className}`}>

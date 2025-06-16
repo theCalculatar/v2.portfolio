@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const poppoinsSans = Poppins({
   variable: "--font-geist-sans",
@@ -27,9 +29,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppoinsMono.variable} ${poppoinsSans.variable} antialiased`}
+        className={`${poppoinsMono.variable} ${poppoinsSans.variable} antialiased p-4 relative `}
       >
+        <header className="absolute left-4 right-4">
+          <Navbar className="" />
+        </header>
         {children}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

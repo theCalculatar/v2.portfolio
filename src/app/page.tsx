@@ -1,16 +1,13 @@
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
 import RoundEdges from "@/components/RoundEdges";
 import { ArrowDown, Plus, Star } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="p-4 relative">
-      <div className="absolute left-4 right-4">
-        <Navbar className="" />
-      </div>
+    <div className=" relative">
+
       <Hero />
 
       <div className="flex flex-col p-6 mt-4 bg-card-background rounded-2xl gap-2">
