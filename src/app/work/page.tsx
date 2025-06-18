@@ -12,7 +12,7 @@ export default function Work() {
         <h1 className="capitalize max-w-sm flex mt-6 font-light text-3xl text-balance">
           Work
         </h1>
-        <p>
+        <p className="text-sm">
           A collection of my latest projects, built with creativity and
           attention to detail.
         </p>
@@ -24,7 +24,7 @@ export default function Work() {
             <Link
               className="rounded-lg relative h-56 overflow-clip project transition-all duration-300"
               key={index}
-              href={`work/${project.id}`}
+              href={`work/${project.name}`}
             >
               <div className="absolute top-0 left-0 z-10">
                 <RoundEdges bl_1 tr_0 className="bg-background px-4 title">

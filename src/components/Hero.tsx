@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Hero() {
@@ -36,12 +37,12 @@ function Hero() {
         >
           Book a Call
         </a>
-        <a
-          href=""
+        <Link
+          href="/work"
           className="py-2 px-4 rounded-md text-sm bg bg-background w-full"
         >
           View Work
-        </a>
+        </Link>
       </div>
     </div>
   );

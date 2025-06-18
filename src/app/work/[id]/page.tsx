@@ -9,7 +9,7 @@ import RoundEdges from "@/components/RoundEdges";
 
 export default async function Workp({ params }: { params: { id: string } }) {
   const { id } = await params;
-  const project = projects.find((project) => project.id === id) || null;
+  const project = projects.find((project) => project.name === id) || null;
 
   if (!project) {
     return notFound();
