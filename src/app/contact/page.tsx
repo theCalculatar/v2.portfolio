@@ -2,7 +2,7 @@ import React from "react";
 
 function Page() {
   return (
-    <div className="bg-neutral-800 pt-32 px-6 pb-8 rounded-2xl">
+    <div className="bg-neutral-800 pt-28 px-6 pb-8 rounded-2xl">
       <div className="flex bg-card-background rounded-2xl flex-col gap-4">
         <h1 className="capitalize max-w-sm flex mt-6 font-light text-3xl text-balance">
           Let&apos;s Talk

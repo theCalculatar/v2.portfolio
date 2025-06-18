@@ -21,7 +21,7 @@ export default async function Work({ params }: Params) {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex px-6 pt-32 pb-8 bg-card-background rounded-2xl flex-col gap-4">
+      <div className="flex px-6 pt-28 pb-8 bg-card-background rounded-2xl flex-col gap-4">
         <h1 className="capitalize max-w-sm flex mt-6 font-light text-3xl text-balance">
           {project.name}
         </h1>

@@ -8,7 +8,7 @@ import { ArrowRight } from "lucide-react";
 export default function Work() {
   return (
     <div className="">
-      <div className="flex px-6 pt-32 pb-6 bg-card-background rounded-2xl flex-col gap-4">
+      <div className="flex px-6 pt-28 pb-6 bg-card-background rounded-2xl flex-col gap-4">
         <h1 className="capitalize max-w-sm flex mt-6 font-light text-3xl text-balance">
           Work
         </h1>
