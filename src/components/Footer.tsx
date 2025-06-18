@@ -2,6 +2,7 @@ import { ArrowRight, Github, Linkedin, Phone } from "lucide-react";
 import React from "react";
 import TextFlip from "./TextFlip";
 import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -69,17 +70,17 @@ function Footer() {
           <ul className="text-center">
             <h6 className="my-1 text-white dark:text-black">Pages</h6>
             <li>
-              <a href="" className="text-sm">
+              <Link href="/" className="text-sm">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="text-sm">
+              <a href="/about" className="text-sm">
                 About
               </a>
             </li>
             <li>
-              <a href="" className="text-sm">
+              <a href="/contact" className="text-sm">
                 Contact
               </a>
             </li>
@@ -88,9 +89,9 @@ function Footer() {
           <ul className="text-center">
             <h6 className="my-1 text-white dark:text-black">CMS</h6>
             <li>
-              <a href="" className="text-sm">
+              <Link href="/work" className="text-sm">
                 Work
-              </a>
+              </Link>
             </li>
             <li>
               <a href="" className="text-sm">

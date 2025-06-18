@@ -31,12 +31,12 @@ function Hero() {
       </p>
 
       <div className="mt-8 flex gap-4 max-w-sm text-center">
-        <a
-          href=""
+        <Link
+          href="/contact"
           className="py-2 px-4 text-white dark:bg-white bg-black dark:text-black rounded-md text-sm w-full"
         >
           Book a Call
-        </a>
+        </Link>
         <Link
           href="/work"
           className="py-2 px-4 rounded-md text-sm bg bg-background w-full"
