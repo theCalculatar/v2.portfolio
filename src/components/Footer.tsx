@@ -7,7 +7,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <div className="grid gap-4">
-      <ul className="grid gap-4 grid-cols-1 sm:grid-cols-2 mt-6">
+      <ul className="grid gap-4 grid-cols-1 sm:grid-cols-2 mt-6 text-font-primary">
         <li className="flex justify-between items-center px-6 py-4 rounded-md bg-card-background">
           <a href="" className="text-sm">
             LinkedIn

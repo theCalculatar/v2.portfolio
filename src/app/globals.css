@@ -14,8 +14,8 @@
   --color-card-background: var(--card-background);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-primary: var(--font-primary);
-  --font-secondary: var(--font-secondary);
+  --color-font-primary: var(--font-primary);
+  --color-font-secondary: var(--font-secondary);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +24,7 @@
     --foreground: #ededed;
     --card-background: var(--color-neutral-800);
     --font-primary: #ffffff;
-    --font-secondary: var(--color-gray-200);
+    --font-secondary: #ffffff99;
   }
 }
 

@@ -61,5 +61,17 @@
       "description": "Some long ass description goes here",
       "items": ["Design + Development", "1 week", "NextJs"]
     }
+  ],
+  "certificates": [
+    {
+      "title": "Bsc (Mathematics & CompSci)",
+      "year": 2024,
+      "link": ""
+    },
+    {
+      "title": "Bsc (Mathematics & CompSci)",
+      "year": 2024,
+      "link": ""
+    }
   ]
 }
