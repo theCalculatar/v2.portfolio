@@ -1,5 +1,5 @@
 import React from "react";
-import { projects } from "@/data/data.json";
+import data from "@/data/data.json";
 import RoundEdges from "@/components/RoundEdges";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,7 +19,7 @@ export default function Work() {
       </div>
 
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-        {projects.map((project, index) => {
+        {data.projects.map((project, index) => {
           return (
             <Link
               className="rounded-lg relative h-56 overflow-clip project transition-all duration-300"

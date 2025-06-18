@@ -1,15 +1,19 @@
 // export const dynamic = "force-dynamic";
 
 import React from "react";
-import { projects } from "@/data/data.json";
+import data from "@/data/data.json";
 import { notFound } from "next/navigation";
 import { ArrowRight, Github } from "lucide-react";
 import Image from "next/image";
 import RoundEdges from "@/components/RoundEdges";
 
-export default async function Workp({ params }: { params: { id: string } }) {
+type Params = {
+  params: Promise<{ id: string }>;
+};
+
+export default async function Work({ params }: Params) {
   const { id } = await params;
-  const project = projects.find((project) => project.name === id) || null;
+  const project = data.projects.find((project) => project.name === id) || null;
 
   if (!project) {
     return notFound();
