@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import RoundEdges from "@/components/RoundEdges";
 import { ArrowDown, Plus, Star } from "lucide-react";
@@ -7,11 +6,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className=" relative">
-
       <Hero />
 
       <div className="flex flex-col p-6 mt-4 bg-card-background rounded-2xl gap-2">
-        <p className="text-sm">
+        <p className="text-sm text-font-primary">
           Outstanding creativity & professional service from Dylut.-
         </p>
 
@@ -174,8 +172,8 @@ export default function Home() {
                 <p className="text-sm">Landing Page</p>
               </RoundEdges>
               <div className="w-3/4 px-6 flex flex-col gap-1">
-                <p className="text-2xl">$2500</p>
-                <p className="text-md">
+                <p className="text-2xl text-font-primary">$2500</p>
+                <p className="text-md text-font-primary">
                   Building interactive, responsive websites using Framer.
                 </p>
               </div>
@@ -210,7 +208,7 @@ export default function Home() {
               className="group faq bg-card-background rounded-md px-6 py-4"
               key={index}
             >
-              <summary className="flex justify-between items-center cursor-pointer list-none">
+              <summary className="flex justify-between items-center cursor-pointer list-none text-font-primary">
                 <h6>Do you provide website maintenance after delivery?</h6>
                 <div className="px-1 rounded-md bg-neutral-800">
                   <Plus
@@ -230,8 +228,6 @@ export default function Home() {
           );
         })}
       </div>
-
-      <Footer />
     </div>
   );
 }
