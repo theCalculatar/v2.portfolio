@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 function RoundEdges({
@@ -11,6 +13,7 @@ function RoundEdges({
   __className = "",
 
   children,
+  onClick = () => {},
 }: Readonly<{
   tl_1?: boolean;
   tl_0?: boolean;
@@ -23,6 +26,7 @@ function RoundEdges({
   className?: string;
   __className?: string;
   children: React.ReactNode;
+  onClick?: () => void;
 }>) {
   const _rounded: React.CSSProperties = { borderRadius: "0" };
 
@@ -41,7 +45,10 @@ function RoundEdges({
   }
 
   return (
-    <div className={`w-fit text-sm flex flex-col ${__className}`}>
+    <div
+      className={`w-fit text-sm flex flex-col ${__className}`}
+      onClick={onClick}
+    >
       {tr_1 && (
         <div className="transform rotate-270 w-fit self-end z-10">
           <RoundSvg />
