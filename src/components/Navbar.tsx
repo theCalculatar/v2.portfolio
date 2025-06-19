@@ -3,33 +3,51 @@
 import React, { useContext } from "react";
 import TextFlip from "@/components/TextFlip";
 import RoundEdges from "./RoundEdges";
-import { AppContext } from "@/app/context";
-import { NAVOPEN } from "@/app/context";
+import { AppContext, NAVOPEN } from "@/app/context";
 import Link from "next/link";
+import data from "@/data/data.json";
+import { Dot } from "lucide-react";
 
 function Navbar({ className = "" }: { className?: string }) {
   const { navDispach, navState } = useContext(AppContext);
 
   return (
     <div className={`overflow-hidden w-full z-10 ${className}`}>
-      <RoundEdges __className="w-full  rounded-b-2xl" bl_1 br_1>
+      <RoundEdges
+        __className="w-full rounded-b-2xl text-font-primary"
+        bl_1
+        br_1
+      >
         <div className="h-9 flex justify-between items-center  w-full ">
           <RoundEdges tr_0 className="h-9 bg-background px-4 z-10">
             <div className=" flex items-center gap-2 ">
               <div className="flex gap-2 items-center">
                 0
                 <TextFlip className="my-4 ">
-                  <p className="text-xm initial min-w-17.5">Alpheus</p>
-                  <p className="text-xm preview hidden">Mabetlela</p>
+                  <Link href={"/"} className="text- initial min-w-17.5">
+                    Alpheus
+                  </Link>
+                  <Link href={"/"} className="text- preview hidden">
+                    Mabetlela
+                  </Link>
                 </TextFlip>
               </div>
-
-              <TextFlip>
-                <p className="text-xs initial text-green-400">Available</p>
-                <p className="text-xs preview hidden text-green-400">
-                  * 2 slots
-                </p>
-              </TextFlip>
+              {data.slots == 0 ? (
+                <TextFlip>
+                  <p className="text-xs initial text-green-400">Available</p>
+                  <p className="text-xs preview hidden text-green-400">
+                    <span className="flex items-center">
+                      <Dot />
+                      {data.slots} slots
+                    </span>
+                  </p>
+                </TextFlip>
+              ) : (
+                <TextFlip>
+                  <p className="text-xs initial text-red-500">Booked</p>
+                  <p className="text-xs preview hidden text-red-500">Booked</p>
+                </TextFlip>
+              )}
             </div>
           </RoundEdges>
           <RoundEdges

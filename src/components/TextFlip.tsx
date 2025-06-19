@@ -23,6 +23,13 @@ function TextFlip({
           transform: translateY(1rem);
           display: block;
         }
+        .text-flip:active .initial {
+          display: none;
+        }
+        .text-flip:active .preview {
+          transform: translateY(1rem);
+          display: block;
+        }
       `}</style>
     </div>
   );
