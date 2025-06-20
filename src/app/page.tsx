@@ -169,7 +169,7 @@ export default function Home() {
               key={key}
             >
               <RoundEdges className="px-2 bg-background" bl_1 tr_0>
-                <p className="text-sm">Landing Page</p>
+                <p className="text-xs text-font-primary">Landing Page</p>
               </RoundEdges>
               <div className="w-3/4 px-6 flex flex-col gap-1">
                 <p className="text-2xl text-font-primary">$2500</p>

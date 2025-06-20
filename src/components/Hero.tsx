@@ -25,7 +25,7 @@ function Hero() {
         Turning your wildest ideas into reality.
       </h1>
 
-      <p className="mt-6">
+      <p className="mt-6 max-w-md">
         Hi, I build web applications with clean code, smooth user experiences,
         and modern interfaces
       </p>
@@ -39,7 +39,7 @@ function Hero() {
         </Link>
         <Link
           href="/work"
-          className="py-2 px-4 rounded-md text-sm bg bg-background w-full"
+          className="py-2 px-4 rounded-md text-sm text-font-primary bg-background w-full"
         >
           View Work
         </Link>
