@@ -6,7 +6,6 @@ import RoundEdges from "./RoundEdges";
 import { AppContext, NAVOPEN } from "@/app/context";
 import Link from "next/link";
 import data from "@/data/data.json";
-import { Dot } from "lucide-react";
 
 function Navbar({ className = "" }: { className?: string }) {
   const { navDispach, navState } = useContext(AppContext);
