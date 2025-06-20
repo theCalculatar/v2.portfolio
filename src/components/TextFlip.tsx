@@ -1,4 +1,8 @@
-import React from "react";
+"use client";
+
+import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { containerVariants, initialChild, previewChild } from "@/utils/motion";
 
 function TextFlip({
   className = "",
@@ -6,36 +10,30 @@ function TextFlip({
 }: React.PropsWithChildren<{
   className?: string;
 }>) {
+  const [flipped, setFilp] = useState(false);
+  const toogleFlip = () => setFilp(!flipped);
+
   return (
-    <div>
-      <div
-        className={`ext-flip-container relative overflow-hidden ${className}`}
-      >
-        <div className="text-flip flex flex-col sm: transition-transform duration-300 ease-in-out cursor-pointer sm:hover:-translate-y-4 active:hover:-translate-y-4 -mt-0.5">
-          {children}
-        </div>
-      </div>
-      <style>{`
-.text-flip:active:hover .initial {
-  display: none;
-}
-.text-flip:active:hover .preview {
-  transform: translateY(1rem);
-  display: block;
-}
-
-
-@media screen and (width>=640) {
-  .text-flip:hover .initial {
-    display: none;
-  }
-  .text-flip:hover .preview {
-    transform: translateY(1rem);
-    display: block;
-  }
-}
-      `}</style>
-    </div>
+    <motion.div
+      className={`relative overflow-hidden flex items-center font-medium ${className} `}
+      onMouseEnter={toogleFlip}
+      onMouseLeave={toogleFlip}
+      onClick={toogleFlip}
+      variants={containerVariants}
+      initial="hidden"
+      animate={flipped ? "visible" : "hidden"}
+    >
+      <motion.div className="text-flip h-5 flex flex-col justify-center sm:transition-transform duration-300 ease-in-out cursor-pointer">
+        {React.Children.map(children, (child, i) => (
+          <motion.div
+            key={i}
+            variants={i % 2 == 0 ? initialChild : previewChild}
+          >
+            {child}
+          </motion.div>
+        ))}
+      </motion.div>
+    </motion.div>
   );
 }
 

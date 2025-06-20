@@ -23,19 +23,19 @@ function Navbar({ className = "" }: { className?: string }) {
             <div className=" flex items-center gap-2 ">
               <div className="flex gap-2 items-center">
                 0
-                <TextFlip className="my-4 ">
-                  <Link href={"/"} className="text- initial min-w-17.5">
+                <TextFlip className="w-18">
+                  <Link href={"/"} className="min-w-17.5">
                     Alpheus
                   </Link>
-                  <Link href={"/"} className="text- preview hidden">
+                  <Link href={"/"} className="">
                     Mabetlela
                   </Link>
                 </TextFlip>
               </div>
               {data.slots == 0 ? (
                 <TextFlip>
-                  <p className="text-xs initial text-green-400">Available</p>
-                  <p className="text-xs preview hidden text-green-400">
+                  <p className="text-xs text-green-400">Available</p>
+                  <p className="text-xs preview text-green-400">
                     <span className="flex items-center">
                       <Dot />
                       {data.slots} slots
@@ -44,8 +44,8 @@ function Navbar({ className = "" }: { className?: string }) {
                 </TextFlip>
               ) : (
                 <TextFlip>
-                  <p className="text-xs initial text-red-500">Booked</p>
-                  <p className="text-xs preview hidden text-red-500">Booked</p>
+                  <p className="text-xs text-red-500">Booked</p>
+                  <p className="text-xs text-red-500">Booked</p>
                 </TextFlip>
               )}
             </div>
@@ -58,13 +58,13 @@ function Navbar({ className = "" }: { className?: string }) {
             <div>
               {navState.isNavOpen ? (
                 <TextFlip>
-                  <span className="text-sm initial">Close</span>
-                  <span className="text-sm preview hidden">Close</span>
+                  <span className="text-sm">Close</span>
+                  <span className="text-sm">Close</span>
                 </TextFlip>
               ) : (
                 <TextFlip>
-                  <span className="text-sm initial">Menu</span>
-                  <span className="text-sm preview hidden">Open</span>
+                  <span className="text-sm">Menu</span>
+                  <span className="text-sm">Open</span>
                 </TextFlip>
               )}
             </div>
@@ -83,36 +83,36 @@ function Navbar({ className = "" }: { className?: string }) {
               href={"/work"}
               className="bg-neutral-200 rounded-md py-2 text-center"
             >
-              <TextFlip>
-                <p className="text-sm initial text-center">Work</p>
-                <p className="text-sm preview hidden">Work</p>
+              <TextFlip className="text-center justify-center">
+                <p className="text-sm">Work</p>
+                <p className="text-sm">Work</p>
               </TextFlip>
             </Link>
             <Link
               href={"/about"}
               className="bg-neutral-200 rounded-md py-2 text-center"
             >
-              <TextFlip>
-                <p className="text-sm initial">About</p>
-                <p className="text-sm preview hidden">About</p>
+              <TextFlip className="text-center justify-center">
+                <p className="text-sm">About</p>
+                <p className="text-sm">About</p>
               </TextFlip>
             </Link>
             <Link
               href={"/blog"}
               className="bg-neutral-200 rounded-md py-2 text-center"
             >
-              <TextFlip>
-                <p className="text-sm initial">Blog</p>
-                <p className="text-sm preview hidden">Blog</p>
+              <TextFlip className="text-center justify-center">
+                <p className="text-sm">Blog</p>
+                <p className="text-sm">Blog</p>
               </TextFlip>
             </Link>
             <Link
               href={"/contact"}
               className="bg-neutral-200 rounded-md py-2 text-center"
             >
-              <TextFlip>
-                <p className="text-sm initial">Contact</p>
-                <p className="text-sm preview hidden">Contact</p>
+              <TextFlip className="text-center justify-center">
+                <p className="text-sm">Contact</p>
+                <p className="text-sm">Contact</p>
               </TextFlip>
             </Link>
           </div>
