@@ -32,12 +32,12 @@ function Navbar({ className = "" }: { className?: string }) {
                   </Link>
                 </TextFlip>
               </div>
-              {data.slots == 0 ? (
+              {data.slots !== 0 ? (
                 <TextFlip>
                   <p className="text-xs text-green-400">Available</p>
-                  <p className="text-xs preview text-green-400">
-                    <span className="flex items-center">
-                      <Dot />
+                  <p className="text-xs text-green-400">
+                    <span className="flex gap-2 items-center">
+                      <span className="w-2 h-2 bg-green-400 rounded-full"></span>
                       {data.slots} slots
                     </span>
                   </p>

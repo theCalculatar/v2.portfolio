@@ -51,7 +51,7 @@ function Page() {
           tr_1
           bl_0
         >
-          <p className="text-sm px-4">Alpheus</p>
+          <p className="text-sm px-4 text-font-primary">Alpheus</p>
         </RoundEdges>
       </div>
 
@@ -67,7 +67,7 @@ function Page() {
         </p>
       </div>
 
-      <div className="mt-6 grid gap-4 text-font-primary">
+      <div className="mt-4 grid gap-4 text-font-primary">
         {data.certificates.map((certificate, index) => {
           return (
             <div

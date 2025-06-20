@@ -29,7 +29,7 @@ export default function Work() {
               <div className="absolute top-0 left-0 z-10">
                 <RoundEdges bl_1 tr_0 className="bg-background px-4 title">
                   <div className="flex justify-between gap-3 items-center ">
-                    <p className="text-sm capitalize">{project.name}</p>
+                    <p className="text-sm capitalize text-font-primary">{project.name}</p>
                     <ArrowRight
                       width={15}
                       className="hidden icon transition-[max-width] duration-300"
