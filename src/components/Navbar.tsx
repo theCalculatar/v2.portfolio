@@ -21,7 +21,7 @@ function Navbar({ className = "" }: { className?: string }) {
           <RoundEdges tr_0 className="h-9 bg-background px-4 z-10">
             <div className=" flex items-center gap-2 ">
               <div className="flex gap-2 items-center">
-                0
+                <div className="w-6 h-6 bg-[url(/logo.svg)] dark:bg-[url(/logo-light.svg)] bg-center bg-no-repeat bg-contain" />
                 <TextFlip className="w-17.5">
                   <Link href={"/"}>Alpheus</Link>
                   <Link href={"/"}>Mabetlela</Link>
