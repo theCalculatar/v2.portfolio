@@ -12,9 +12,11 @@ export default function Work() {
         <h1 className="capitalize max-w-sm flex mt-6 font-light text-3xl text-balance">
           Work
         </h1>
-        <p className="text-sm">
-          A collection of my latest projects, built with creativity and
-          attention to detail.
+        <p className="text-sm max-w-3xl">
+          A curated collection of my latest projects — each crafted with a blend
+          of creativity, technical precision, and attention to detail. From
+          practical tools to innovative solutions, these works reflect my
+          passion for building with purpose.
         </p>
       </div>
 
@@ -22,14 +24,14 @@ export default function Work() {
         {data.projects.map((project, index) => {
           return (
             <Link
-              className="rounded-lg relative h-56 overflow-clip project transition-all duration-300"
+              className="rounded-lg relative h-fit overflow-clip project transition-all duration-300"
               key={index}
               href={`work/${project.name}`}
             >
               <div className="absolute top-0 left-0 z-10">
                 <RoundEdges bl_1 tr_0 className="bg-background px-4 title">
                   <div className="flex justify-between gap-3 items-center ">
-                    <p className="text-sm capitalize text-font-primary">{project.name}</p>
+                    <p className="text-sm capitalize">{project.name}</p>
                     <ArrowRight
                       width={15}
                       className="hidden icon transition-[max-width] duration-300"
@@ -39,7 +41,7 @@ export default function Work() {
               </div>
               <Image
                 src={project.preview}
-                style={{ height: "100%", width: "100%", objectFit: "cover" }}
+                style={{ width: "100%", objectFit: "cover" }}
                 width={600}
                 height={300}
                 alt={`image ${project.name}`}

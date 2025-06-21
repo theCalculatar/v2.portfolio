@@ -7,7 +7,7 @@ function Page() {
         <h1 className="capitalize max-w-sm flex mt-6 font-light text-3xl text-balance">
           Let&apos;s Talk
         </h1>
-        <p className="text-sm">
+        <p className="max-w-3xl">
           Looking to build something great? Get in touch and let&apos;s
           collaborate.
         </p>
@@ -37,6 +37,16 @@ function Page() {
           className="p-3 bg-background rounded-md text-sm"
           rows={7}
         ></textarea>
+      </div>
+      <div className="mt-4">
+        <p className="text-sm max-w-3xl">
+          By submitting this form, I consent to the processing of the personal
+          data that I have provided and declare my agreement with the data
+          protection regulations in the data privacy statement.
+        </p>
+        <button className="mt-4 px-10 py-2 text-sm bg-black dark:bg-white rounded-md  dark:text-black">
+          Submit
+        </button>
       </div>
     </div>
   );

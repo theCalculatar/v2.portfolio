@@ -25,33 +25,43 @@ export default async function Work({ params }: Params) {
         <h1 className="capitalize max-w-sm flex mt-6 font-light text-3xl text-balance">
           {project.name}
         </h1>
-        <p>{project.description}</p>
+        <p className="max-w-3xl">{project.description}</p>
         <div className="mt-4 flex items-center gap-4">
-          <a
-            href=""
-            className="py-2 px-4 dark:bg-white rounded-md text-sm dark:text-black "
-          >
-            Preview site
-          </a>
-          <a
-            href=""
-            className="flex items-center gap-2 py-2 px-4 dark:bg-black rounded-md text-sm dark:text-white "
-          >
-            GitHub <Github width={15} />
-          </a>
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              className="py-2 px-4 dark:bg-white rounded-md text-sm dark:text-black "
+            >
+              Preview site
+            </a>
+          )}
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              className="flex items-center gap-2 py-2 px-4 dark:bg-black rounded-md text-sm text-font-primary"
+            >
+              GitHub <Github width={15} />
+            </a>
+          )}
         </div>
       </div>
 
-      <div className="rounded-2xl h-72 overflow-clip relative">
+      <div className="rounded-2xl overflow-clip relative">
         <Image
           src={project.preview}
           alt={project.name}
           width={400}
-          height={2}
-          style={{ width: "100%", height: "100%" }}
+          height={400}
+          style={{ width: "100%", objectFit: "cover" }}
         />
         <div className="absolute bottom-0 right-0">
-          <RoundEdges className="bg-background px-4 text-font-primary" bl_0 tr_1>
+          <RoundEdges
+            className="bg-background px-4 text-font-primary"
+            bl_0
+            tr_1
+          >
             <p>{project.date}</p>
           </RoundEdges>
         </div>
@@ -70,19 +80,16 @@ export default async function Work({ params }: Params) {
         </h2>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2">
         {project.images?.map((image, index) => {
           return (
-            <div
-              className="h-72 bg-amber-300 overflow-clip rounded-2xl"
-              key={index}
-            >
+            <div className=" overflow-clip rounded-md" key={index}>
               <Image
                 src={image}
                 alt={`gallery-${index}`}
                 width={400}
                 height={200}
-                style={{ height: "100%", width: "100%" }}
+                style={{ width: "100%" }}
               />
             </div>
           );

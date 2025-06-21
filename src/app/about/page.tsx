@@ -29,7 +29,7 @@ function Page() {
           your Daily Engineer
         </h1>
 
-        <p className="mt-6">
+        <p className="mt-6 max-w-3xl">
           I&apos;m a full-stack developer with a strong foundation in both
           frontend and backend technologies, specializing in building efficient,
           user-focused web applications.
