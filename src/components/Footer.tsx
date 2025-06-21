@@ -1,4 +1,4 @@
-import { ArrowRight, Github, Linkedin, Phone } from "lucide-react";
+import { File, Github, Linkedin, Mail, Phone } from "lucide-react";
 import React from "react";
 import TextFlip from "./TextFlip";
 import Image from "next/image";
@@ -8,34 +8,50 @@ function Footer() {
   return (
     <div className="grid gap-4">
       <ul className="grid gap-4 grid-cols-1 sm:grid-cols-2 mt-6 text-font-primary">
-        <li className="flex justify-between items-center px-6 py-4 rounded-md bg-card-background">
-          <a href="" className="text-sm">
-            LinkedIn
-          </a>
-          <Linkedin width={15} height={15} />
-        </li>
-        <li className="flex justify-between items-center px-6 py-4 rounded-md bg-card-background">
-          <a href="" className="text-sm">
+        <li className="rounded-md bg-card-background">
+          <a
+            href="https://github.com/theCalculatar/"
+            target="_blank"
+            className="text-sm flex justify-between px-6 py-4"
+          >
             GitHub
+            <Github width={15} height={15} />
           </a>
-          <Github width={15} height={15} />
         </li>
-        <li className="flex justify-between items-center px-6 py-4 rounded-md bg-card-background">
-          <a href="" className="text-sm">
+        <li className="rounded-md bg-card-background">
+          <a
+            href="https://www.linkedin.com/in/mahlane/"
+            target="_blank"
+            className="text-sm flex justify-between px-6 py-4"
+          >
             LinkedIn
+            <Linkedin width={15} height={15} />
           </a>
-          <ArrowRight width={18} height={18} />
         </li>
-        <li className="flex justify-between items-center px-6 py-4 rounded-md bg-card-background">
-          <a href="" className="text-sm">
-            LinkedIn
+        <li className="rounded-md bg-card-background">
+          <a
+            href="mailto:alpheusm13@gmail.com"
+            target="_blank"
+            className="text-sm flex justify-between px-6 py-4"
+          >
+            Email
+            <Mail width={15} height={15} />
           </a>
-          <Linkedin width={15} height={15} />
+        </li>
+        <li className="rounded-md bg-card-background">
+          <a
+            href=""
+            target="_blank"
+            className="text-sm flex justify-between px-6 py-4"
+          >
+            Resume
+            <File width={15} height={15} />
+          </a>
         </li>
       </ul>
 
       <a
-        href=""
+        href="/contact"
         className="text-sm px-6 py-4 rounded-md flex justify-between items-center bg-black text-white dark:bg-white dark:text-black"
       >
         <p>Book a Call</p>

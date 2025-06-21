@@ -17,7 +17,9 @@ function TextFlip({
     <motion.div
       className={`relative overflow-hidden flex items-center font-medium ${className} `}
       onMouseEnter={toogleFlip}
-      onMouseLeave={toogleFlip}
+      onMouseLeave={() => {
+        if (flipped) toogleFlip();
+      }}
       onClick={toogleFlip}
       variants={containerVariants}
       initial="hidden"
