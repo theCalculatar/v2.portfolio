@@ -10,22 +10,61 @@
   "projects": [
     {
       "id": "1",
-      "preview": "/images/lee.jpeg",
-      "name": "Hanssen",
-      "description": "A modern, Scandinavian-inspired portfolio website showcasing Hanssen’s handcrafted furniture collections, blending clean aesthetics with seamless functionality.",
-      "github": "https://github.com",
-      "demo": "https://github.com",
+      "preview": "/images/restviz-package0.jpg",
+      "name": "restViz-package",
+      "description": "A zero-config Express middleware for generating interactive API docs and live testing UI – all from your routes.",
+      "github": "https://github.com/theCalculatar/restviz",
+      "demo": "https://www.npmjs.com/package/restviz",
       "date": "2025",
-      "about": "Hanssen’s portfolio website was designed to highlight their exquisite Scandinavian furniture collections. The site embraces minimalist design principles, reflecting the brand’s ethos of simplicity and elegance. Built with Framer, it features a visually engaging layout that balances stunning imagery with intuitive navigation.",
-      "images": ["/images/lee.jpeg", "/images/lee.jpeg", "/images/lee.jpeg"]
+      "about": "The RestViz NPM package is a plug-and-play middleware for Express (v4 & v5) that auto-generates interactive API documentation. With support for custom metadata like descriptions, request bodies, and example responses, RestViz turns your backend into a live-testing environment. No need for Swagger or Postman — just drop it in your app, and you're good to go. It’s fast, framework-agnostic, and focused on developer ergonomics.",
+      "images": [
+        "/images/restviz-package0.jpg",
+        "/images/restviz-package1.jpg",
+        "/images/restviz-package2.jpg"
+      ]
     },
+
     {
       "id": "2",
-      "preview": "/images/lee.jpeg",
-      "name": "sum project",
-      "description": "Some long ass description goes here",
-      "github": "https://github.com",
-      "demo": "https://github.com"
+      "preview": "/images/mailaneng0.jpg",
+      "name": "manaileng",
+      "description": "A soccer site for Manaileng FC soccer club which features Team news and match updates, Fixtures and results, Player profiles, Club history and mission, Contact info and location",
+      "github": null,
+      "demo": "https://manailengfc.co.za/",
+      "date": "2025",
+      "about": "Manaileng Football Club was established in 2006 by a group of passionate football enthusiasts from Zebediela, Limpopo. What started as a community initiative has grown into one of the most respected football clubs in the region. \n Our journey has been marked by perseverance, growth, and an unwavering commitment to developing local talent. Through the years, we've built a strong foundation based on discipline, teamwork, and community involvement. \nToday, Manaileng FC competes at the highest levels of regional football, with aspirations to reach the Premier Soccer League. We continue to invest in youth development, infrastructure, and coaching excellence to achieve our goals.",
+      "images": [
+        "/images/mailaneng0.jpg",
+        "/images/mailaneng1.jpg",
+        "/images/mailaneng2.jpg"
+      ]
+    },
+    {
+      "id": "3",
+      "preview": "/images/medinow0.jpg",
+      "name": "MediNow",
+      "description": "A university-led health tech project offering digital access to medical information and emergency services for University students on and off campus.",
+      "github": "https://github.com/theCalculatar/MediNow",
+      "demo": null,
+      "date": "2023",
+      "about": "Medi Now your reliable companion in times of need! primarily build for students, this app is designed with your safety in mind, providing a range of features to ensure swift and effective emergency assistance. Currently the app is not uploaded on google play or any other app store, you can clone and build app or indulge your eyes on the screenshots uploaded. Medi-now uses morden technologies to better address problems in hand.",
+      "images": ["/images/medinow0.jpg"]
+    },
+    {
+      "id": "4",
+      "preview": "/images/restviz-site0.jpg",
+      "name": "restViz-site",
+      "description": "A sleek, interactive API documentation and testing sandbox built for modern Express apps—say goodbye to Postman and Swagger.",
+      "github": "https://github.com/alpheusmahlane/restviz",
+      "demo": "https://restviz.vercel.app",
+      "date": "2025",
+      "about": "RestViz started as a lightweight API documentation middleware for Express, but quickly evolved into a full-featured live API testing sandbox. With zero setup, developers can now test routes directly from the browser. It supports interactive request sending, customizable metadata (descriptions, params, responses), and clean UI out of the box. Designed for speed, simplicity, and dev joy.",
+      "images": [
+        "/images/restviz-site0.jpg",
+        "/images/restviz-site1.jpg",
+        "/images/restviz-site2.jpg",
+        "/images/restviz-site3.jpg"
+      ]
     }
   ],
   "services": [
