@@ -112,5 +112,33 @@
       "year": 2024,
       "link": ""
     }
+  ],
+  "tools": [
+    "/icons/tailwindcss.svg",
+    "/icons/angular.svg",
+    "/icons/linux.svg",
+    "/icons/html.png",
+    "/icons/css.png",
+    "/icons/java.png",
+    "/icons/python.png",
+    "/icons/android.png",
+    "/icons/bootstrap.png",
+    "/icons/react.png",
+    "/icons/redux.svg",
+    "/icons/github.png",
+    "/icons/django.png",
+    "/icons/firebase.png",
+    "/icons/figma.png",
+    "/icons/postman.png",
+    "/icons/js.png",
+    "/icons/mysql.png",
+    "/icons/aws.svg",
+    "/icons/canva.svg",
+    "/icons/csharp.svg",
+    "/icons/git.svg",
+    "/icons/rxjs.svg",
+    "/icons/postgresql.svg",
+    "/icons/spring.svg",
+    "/icons/jest.svg"
   ]
 }

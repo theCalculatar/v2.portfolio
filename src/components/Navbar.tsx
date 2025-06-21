@@ -97,12 +97,12 @@ function Navbar({ className = "" }: { className?: string }) {
               </TextFlip>
             </Link>
             <Link
-              href={"/blog"}
+              href={"/about#technology"}
               className="bg-neutral-200 rounded-md py-2 text-center"
             >
               <TextFlip className="text-center justify-center">
-                <p className="text-sm">Blog</p>
-                <p className="text-sm">Blog</p>
+                <p className="text-sm">technologies</p>
+                <p className="text-sm">technologies</p>
               </TextFlip>
             </Link>
             <Link

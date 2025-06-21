@@ -82,8 +82,36 @@ function Page() {
           );
         })}
       </div>
+
+      <div className="mt-6" id="technology">
+        <h1 className="capitalize max-w-sm flex font-light text-3xl text-balance">
+          technologies
+          <br /> &tools
+        </h1>
+        <p className="mt-4 max-w-3xl">
+          A stack of tools and technologies I work with — from frontend
+          frameworks to backend systems, databases, and dev tools that power my
+          builds.
+        </p>
+        <div className="p-6 bg-card-background rounded-2xl mt-6 outline-1 flex flex-wrap justify-start gap-4 backdrop-blur-2xl">
+          {data.tools.map((tool, index) => {
+            return (
+              <Image
+                key={index}
+                src={tool}
+                width={50}
+                height={50}
+                className="w-8 h-8"
+                alt={`icon ${tool}`}
+              />
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 }
 
 export default Page;
+
+
