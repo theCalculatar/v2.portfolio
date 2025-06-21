@@ -22,13 +22,9 @@ function Navbar({ className = "" }: { className?: string }) {
             <div className=" flex items-center gap-2 ">
               <div className="flex gap-2 items-center">
                 0
-                <TextFlip className="w-23 text-lg">
-                  <Link href={"/"}>
-                    Alpheus
-                  </Link>
-                  <Link href={"/"}>
-                    Mabetlela
-                  </Link>
+                <TextFlip className="w-17.5">
+                  <Link href={"/"}>Alpheus</Link>
+                  <Link href={"/"}>Mabetlela</Link>
                 </TextFlip>
               </div>
               {data.slots !== 0 ? (
@@ -51,7 +47,7 @@ function Navbar({ className = "" }: { className?: string }) {
           </RoundEdges>
           <RoundEdges
             tl_0
-            className="h-9 px-4 flex items-center justify-center bg-background z-10 cursor-pointer text-lg"
+            className="h-9 px-4 flex items-center justify-center bg-background z-10 cursor-pointer"
             onClick={() => navDispach(NAVOPEN)}
           >
             <div>

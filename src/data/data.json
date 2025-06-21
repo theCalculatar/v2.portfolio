@@ -70,35 +70,56 @@
   "services": [
     {
       "name": "Design",
-      "description": "Some long ass description goes here"
+      "description": "Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can enjoy on all digital mediums."
     },
     {
-      "name": "Design",
-      "description": "Some long ass description goes here"
+      "name": "Development",
+      "description": "With a solid grounding in computer science, my enthusiasm lies in both web design and development, with a budding interest in mobile app development. As I progress in my software developement journey, my goal is to craft code that is not only clean and readable but also serves as a foundation for others, enabling the creation of aesthetically pleasing software."
     },
     {
-      "name": "Design",
-      "description": "Some long ass description goes here"
+      "name": "Involvement",
+      "description": "Engagement in the tech community fuels my passion for growth and learning. Through participation in hackathons, coding bootcapms, and online forums, I immerse myself in the latest trends and technologies, gaining invaluable insights in the ever evovling landscape of computer science and honing my skills."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do you provide website maintenance after delivery?",
+      "answer": "While maintenance is not included in the packages, I can offer ongoing support as an additional service."
+    },
+    {
+      "question": "How long will it take to build my project?",
+      "answer": "Timeline depends on project size and requirements. A simple site may take a few days, while a custom app can take weeks."
+    },
+    {
+      "question": "Are you able to redesign my existing website?",
+      "answer": "Yes! I can either improve your current site or rebuild it from scratch based on your goals."
+    },
+    {
+      "question": "Can you work with my designer or team?",
+      "answer": "Yes! I’ve worked solo and with teams I’m happy to collaborate using Figma, Trello, GitHub, or whatever you use."
     }
   ],
   "pricing": [
     {
-      "title": "Landing page",
-      "price": 1233,
-      "description": "Some long ass description goes here",
-      "items": ["Design + Development", "1 week", "NextJs"]
+      "type": "Landing Page",
+      "description": "A clean, responsive one-page site ideal for product launches, portfolios, or marketing campaigns. Includes animations, contact form, and basic SEO.",
+      "price": 1500,
+      "duration": "3–5 days",
+      "items": ["Design + Development", "React"]
     },
     {
-      "title": "Landing page",
-      "price": 1233,
-      "description": "Some long ass description goes here",
-      "items": ["Design + Development", "1 week", "NextJs"]
+      "type": "Web Appication",
+      "description": "A modern frontend-only web application with dynamic UI, state management, and API integrations.",
+      "price": 1800,
+      "duration": "10–14 days",
+      "items": ["Design + Development", "React"]
     },
     {
-      "title": "Landing page",
-      "price": 1233,
-      "description": "Some long ass description goes here",
-      "items": ["Design + Development", "1 week", "NextJs"]
+      "type": "Custom",
+      "description": "Multi-page website for small to medium businesses. Includes essential pages, responsive layout, SEO setup, and contact integration.",
+      "price": 9000,
+      "duration": "7–10 days",
+      "items": ["Design + Development", "NextJs"]
     }
   ],
   "certificates": [
