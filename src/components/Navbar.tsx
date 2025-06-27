@@ -17,37 +17,39 @@ function Navbar({ className = "" }: { className?: string }) {
         bl_1
         br_1
       >
-        <div className="h-9 flex justify-between items-center  w-full ">
-          <RoundEdges tr_0 className="h-9 bg-background px-4 z-10">
+        <div className="h-9 xl:h-10 flex justify-between items-center  w-full ">
+          <RoundEdges tr_0 className="h-9 xl:h-10 bg-background px-4 z-10">
             <div className=" flex items-center gap-2 ">
               <div className="flex gap-2 items-center">
-                <div className="w-6 h-6 bg-[url(/logo.svg)] dark:bg-[url(/logo-light.svg)] bg-center bg-no-repeat bg-contain" />
-                <TextFlip className="w-17.5">
+                <div className="w-6 h-6 xl:w-7 xl:h-7 bg-[url(/logo.svg)] dark:bg-[url(/logo-light.svg)] bg-center bg-no-repeat bg-contain" />
+                <TextFlip className="w-17.5 xl:text-lg xl:w-24">
                   <Link href={"/"}>Alpheus</Link>
                   <Link href={"/"}>Mabetlela</Link>
                 </TextFlip>
               </div>
-              {data.slots !== 0 ? (
-                <TextFlip>
-                  <p className="text-xs text-green-400">Available</p>
-                  <p className="text-xs text-green-400">
-                    <span className="flex gap-2 items-center">
-                      <span className="w-2 h-2 bg-green-400 rounded-full"></span>
-                      {data.slots} slots
-                    </span>
-                  </p>
-                </TextFlip>
-              ) : (
-                <TextFlip>
-                  <p className="text-xs text-red-500">Booked</p>
-                  <p className="text-xs text-red-500">Booked</p>
-                </TextFlip>
-              )}
+              <div className="text-sm xl:text-md">
+                {data.slots !== 0 ? (
+                  <TextFlip>
+                    <p className="text-green-400">Available</p>
+                    <p className="text-green-400">
+                      <span className="flex gap-2 items-center">
+                        <span className="w-2 h-2 bg-green-400 rounded-full"></span>
+                        {data.slots} slots
+                      </span>
+                    </p>
+                  </TextFlip>
+                ) : (
+                  <TextFlip>
+                    <p className="text-red-500">Booked</p>
+                    <p className="text-red-500">Booked</p>
+                  </TextFlip>
+                )}
+              </div>
             </div>
           </RoundEdges>
           <RoundEdges
             tl_0
-            className="h-9 px-4 flex items-center justify-center bg-background z-10 cursor-pointer"
+            className="h-9 xl:h-12 xl:text-lg px-4 flex items-center justify-center bg-background z-10 cursor-pointer"
             onClick={() => navDispach(NAVOPEN)}
           >
             <div>

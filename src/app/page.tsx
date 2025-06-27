@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
 
       <div className="flex flex-col p-6 mt-4 bg-card-background rounded-2xl gap-2">
-        <p className="text-sm text-font-primary">
+        <p className="text-sm lg:text-base text-font-primary">
           Outstanding creativity & professional service from Dylut.-
         </p>
 
@@ -61,26 +61,27 @@ export default function Home() {
           Projects <ArrowDown height={15} width={15} className="-rotate-135" />
         </h2>
 
-        <p className="text-sm text-pretty max-w-3xl">
+        <p className="text-sm lg:text-base text-pretty max-w-3xl">
           These are the things I&#39;ve built along the way small pieces that
           slowly shaped who I am, both as a developer and a thinker.
         </p>
       </div>
 
-      <div className="w-full overflow-hidden">
-        <div className="p-4 flex rounded-2xl marqueeContent gap-4">
+      <div className="w-full overflow-hidden md:overflow-auto hide-scrollbar">
+        <div className="p-4 flex md:p-0 md:grid md:grid-cols-4 rounded-2xl marqueeContent gap-4">
           {data.projects.map((project, key) => {
             return (
               <div
-                className="w-48 overflow-clip object-fill imageWrapper rounded-md flex-none"
+                className="w-full overflow-clip imageWrapper rounded-md flex-none grid-cols-none"
                 key={key}
               >
                 <Image
                   src={project.preview}
-                  width={170}
-                  height={86}
+                  width={296}
+                  height={182}
                   alt="qwery fork"
-                  style={{ width: "196px", height: "120px", objectFit: "fill" }}
+                  className=" w-full hover:scale-105 transition-all duration-300"
+                  style={{ objectFit: "fill" }}
                 />
               </div>
             );
@@ -88,7 +89,6 @@ export default function Home() {
         </div>
         <style>{`
           .marqueeContent {
-            display: flex;
             animation: scroll 10s linear infinite;
           }
 
@@ -114,7 +114,7 @@ export default function Home() {
         {data.services.map((service, key) => {
           return (
             <div className="bg-card-background rounded-2xl" key={key}>
-              <div className="flex justify-between">
+              <div className="flex justify-start">
                 <RoundEdges className="px-2 bg-background" bl_1 tr_0>
                   <div className="flex gap-1">
                     <Star
@@ -149,12 +149,14 @@ export default function Home() {
                     />
                   </div>
                 </RoundEdges>
-                <p className="capitalize mt-1.5 text-font-primary mr-4">
+                <p className="capitalize xl:text-base text-sm mt-1.5 text-font-primary mr-4">
                   {service.name}
                 </p>
               </div>
 
-              <p className="mx-4 mt-2 mb-4 text-sm">{service.description}</p>
+              <p className="mx-4 mt-0 mb-4 text-sm lg:text-base">
+                {service.description}
+              </p>
             </div>
           );
         })}
@@ -170,7 +172,9 @@ export default function Home() {
           return (
             <div className="bg-card-background  rounded-2xl pb-6" key={key}>
               <RoundEdges className="px-2 bg-background" bl_1 tr_0>
-                <p className="text-xs text-font-primary">{service.type}</p>
+                <p className="text-xs text-font-primary lg:text-sm">
+                  {service.type}
+                </p>
               </RoundEdges>
               <div className=" px-6 flex flex-col gap-1">
                 <p className="text-2xl text-font-primary">
@@ -201,7 +205,7 @@ export default function Home() {
       </div>
 
       <div className="py-4 mt-6 rounded-2xl flex gap-2 items-center">
-        <h2 className="text-lg">FAQ&apos;s </h2>
+        <h2>FAQ&apos;s </h2>
         <ArrowDown height={15} width={15} />
       </div>
 

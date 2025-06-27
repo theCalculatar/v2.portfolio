@@ -41,3 +41,16 @@ h4,
 h5 {
   color: var(--font-primary);
 }
+
+h2 {
+  @apply text-2xl;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

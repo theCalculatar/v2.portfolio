@@ -5,7 +5,7 @@ import React from "react";
 function Hero() {
   return (
     <div className="w-full bg-card-background pt-32 px-6  pb-8 rounded-2xl">
-      <div className="flex gap-4 items-center">
+      <div className="flex gap-4 items-center xl:mt-20">
         <Image
           src={"/images/lee.jpeg"}
           width={50}
@@ -21,7 +21,7 @@ function Hero() {
         </div>
       </div>
 
-      <h1 className="capitalize max-w-sm flex mt-6 font-light text-3xl text-balance">
+      <h1 className="capitalize max-w-sm xl:max-w-3xl flex mt-6 font-light text-3xl xl:text-5xl text-balance">
         Turning your wildest ideas into reality.
       </h1>
 
@@ -30,7 +30,7 @@ function Hero() {
         and modern interfaces
       </p>
 
-      <div className="mt-8 flex gap-4 max-w-sm text-center">
+      <div className="mt-8 xl:mt-14 flex gap-4 max-w-sm text-center">
         <Link
           href="/contact"
           className="py-2 px-4 text-white dark:bg-white bg-black dark:text-black rounded-md text-sm w-full"
