@@ -31,7 +31,7 @@ const previewChild = {
   visible: { opacity: 1, y: 0, display: "block" },
 };
 
-export const slideUp = {
+const slideUp = {
   hidden: { opacity: 0, y: 30 },
   show: {
     opacity: 1,
@@ -42,4 +42,10 @@ export const slideUp = {
   },
 };
 
-export { containerVariants, initialChild, previewChild, slideUp,fipperContainer };
+export {
+  containerVariants,
+  initialChild,
+  previewChild,
+  slideUp,
+  fipperContainer,
+};
