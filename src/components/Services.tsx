@@ -9,7 +9,7 @@ const SlideUp = dynamic(() => import("@/components/SlideUp"), {});
 
 function Projects() {
   return (
-    <Container>
+    <Container show="tiny">
       <SlideUp>
         <div className="py-4 mt-4 flex items-center gap-2 ">
           <h2 className="text-lg">What I do? </h2>

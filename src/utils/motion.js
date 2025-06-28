@@ -42,10 +42,16 @@ const slideUp = {
   },
 };
 
+const popIn = {
+  hidden: { scale: 0.9, opacity: 0 },
+  show: { scale: 1, opacity: 1 },
+};
+
 export {
   containerVariants,
   initialChild,
   previewChild,
   slideUp,
   fipperContainer,
+  popIn,
 };

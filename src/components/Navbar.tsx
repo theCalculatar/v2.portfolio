@@ -49,7 +49,7 @@ function Navbar({ className = "" }: { className?: string }) {
           </RoundEdges>
           <RoundEdges
             tl_0
-            className="h-9 xl:h-12 xl:text-lg px-4 flex items-center justify-center bg-background z-10 cursor-pointer"
+            className="h-9 xl:h-10 xl:text-lg px-4 flex items-center justify-center bg-background z-10 cursor-pointer"
             onClick={() => navDispach(NAVOPEN)}
           >
             <div>
