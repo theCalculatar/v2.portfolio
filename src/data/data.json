@@ -69,12 +69,12 @@
   ],
   "services": [
     {
-      "name": "Design",
-      "description": "Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can enjoy on all digital mediums."
-    },
-    {
       "name": "Development",
       "description": "With a solid grounding in computer science, my enthusiasm lies in both web design and development, with a budding interest in mobile app development. As I progress in my software developement journey, my goal is to craft code that is not only clean and readable but also serves as a foundation for others, enabling the creation of aesthetically pleasing software."
+    },
+    {
+      "name": "Design",
+      "description": "Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can enjoy on all digital mediums."
     },
     {
       "name": "Involvement",

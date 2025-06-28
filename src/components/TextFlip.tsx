@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { containerVariants, initialChild, previewChild } from "@/utils/motion";
+import { fipperContainer, initialChild, previewChild } from "@/utils/motion";
 
 function TextFlip({
   className = "",
@@ -21,7 +21,7 @@ function TextFlip({
         if (flipped) toogleFlip();
       }}
       onClick={toogleFlip}
-      variants={containerVariants}
+      variants={fipperContainer}
       initial="hidden"
       animate={flipped ? "visible" : "hidden"}
     >
