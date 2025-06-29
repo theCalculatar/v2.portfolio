@@ -11,7 +11,7 @@
     {
       "id": "1",
       "preview": "/images/restviz-package0.jpg",
-      "name": "restViz-package",
+      "name": "restviz",
       "description": "A zero-config Express middleware for generating interactive API docs and live testing UI – all from your routes.",
       "github": "https://github.com/theCalculatar/restviz",
       "demo": "https://www.npmjs.com/package/restviz",
@@ -67,20 +67,22 @@
       ]
     }
   ],
+
   "services": [
     {
       "name": "Development",
-      "description": "With a solid grounding in computer science, my enthusiasm lies in both web design and development, with a budding interest in mobile app development. As I progress in my software developement journey, my goal is to craft code that is not only clean and readable but also serves as a foundation for others, enabling the creation of aesthetically pleasing software."
+      "description": "I specialize in web development with a growing passion for Enterprise systems. I aim to write clean, maintainable code that not only functions well but also serves as a solid base for scalable and visually compelling software."
     },
     {
       "name": "Design",
-      "description": "Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can enjoy on all digital mediums."
+      "description": "Design goes beyond appearance, it’s about how something works and how it makes users feel. I create intuitive interfaces and seamless user experiences across digital platforms, blending form with function."
     },
     {
       "name": "Involvement",
-      "description": "Engagement in the tech community fuels my passion for growth and learning. Through participation in hackathons, coding bootcapms, and online forums, I immerse myself in the latest trends and technologies, gaining invaluable insights in the ever evovling landscape of computer science and honing my skills."
+      "description": "Active engagement in the tech community drives my growth. From hackathons and coding bootcamps to online forums, I stay connected to the pulse of technology learning, sharing, and evolving in an ever-changing field."
     }
   ],
+
   "faqs": [
     {
       "question": "Do you provide website maintenance after delivery?",
@@ -102,14 +104,14 @@
   "pricing": [
     {
       "type": "Landing Page",
-      "description": "A clean, responsive one-page site ideal for product launches, portfolios, or marketing campaigns. Includes animations, contact form, and basic SEO.",
+      "description": "A clean, responsive one-page site ideal for product launches, portfolios, or marketing campaigns. Includes animations, contact form.",
       "price": 1500,
       "duration": "3–5 days",
       "items": ["Design + Development", "React"]
     },
     {
       "type": "Web Appication",
-      "description": "A modern frontend-only web application with dynamic UI, state management, and API integrations.",
+      "description": "A modern frontend-only web application with dynamic UI, state management, API integrations and Basic SEO setup",
       "price": 1800,
       "duration": "10–14 days",
       "items": ["Design + Development", "React"]

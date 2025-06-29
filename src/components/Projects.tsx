@@ -13,13 +13,14 @@ function Projects() {
       <SlideUp>
         <div className="py-4 mt-6 rounded-2xl flex flex-col  gap-4 ">
           <h2 className="flex gap-2 justify-start items-center text-xl">
-            Projects{" "}
+            Projects
             <ArrowDown height={15} width={15} className="-rotate-135" />
           </h2>
 
           <p className="text-sm lg:text-base text-pretty max-w-3xl">
-            These are the things I&#39;ve built along the way small pieces that
-            slowly shaped who I am, both as a developer and a thinker.
+            Through each project, I&apos;ve learned, evolved, and uncovered new
+            ways to think and build, shaping not just my skills, but my
+            perspective.
           </p>
         </div>
       </SlideUp>

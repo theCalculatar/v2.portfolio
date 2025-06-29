@@ -123,14 +123,9 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="" className="text-sm">
+                <Link href="/work/restviz" className="text-sm">
                   Work Single
-                </a>
-              </li>
-              <li>
-                <a href="" className="text-sm">
-                  Blog
-                </a>
+                </Link>
               </li>
             </ul>
 
