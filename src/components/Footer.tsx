@@ -50,7 +50,7 @@ function Footer() {
           <PopUp>
             <li className="rounded-md bg-card-background">
               <a
-                href=""
+                href="/resume.pdf"
                 target="_blank"
                 className="text-sm flex justify-between px-6 py-4"
               >
