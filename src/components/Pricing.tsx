@@ -4,6 +4,7 @@ import Container from "./Container";
 import dynamic from "next/dynamic";
 import data from "@/data/data.json";
 import RoundEdges from "./RoundEdges";
+import Link from "next/link";
 
 const SlideUp = dynamic(() => import("@/components/SlideUp"), {});
 
@@ -44,12 +45,12 @@ function Projects() {
                   </ul>
                 </div>
 
-                <a
-                  href=""
+                <Link
+                  href="/contact"
                   className="py-2 mt-4 text-white bg-black dark:text-black text-sm mx-6 dark:bg-white rounded-md flex justify-center"
                 >
                   Start Now
-                </a>
+                </Link>
               </div>
             </SlideUp>
           );
