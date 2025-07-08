@@ -9,7 +9,7 @@ const sendMailSchema = z.object({
   message: z.string().min(2, "Message is required"),
 });
 
-async function sendMail(initialState: any, formData: FormData) {
+async function sendMail(initialState: unknown, formData: FormData) {
   const name = formData.get("name") as string;
   const email = formData.get("email") as string;
   const message = formData.get("message") as string;
@@ -20,7 +20,7 @@ async function sendMail(initialState: any, formData: FormData) {
       error: "Invalid input",
     };
   }
-  
+
   try {
     await transporter.sendMail({
       from: `"Portfolio Website Form" <${email}>`,
@@ -42,6 +42,8 @@ async function sendMail(initialState: any, formData: FormData) {
       success: true,
       error: "",
     };
+    
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     return {
       message: "Failed to send email",

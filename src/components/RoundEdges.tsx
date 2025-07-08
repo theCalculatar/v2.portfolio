@@ -9,6 +9,8 @@ function RoundEdges({
   tl_0 = false,
   tr_1 = false,
   tr_0 = false,
+  id,
+  ref,
   className = "",
   __className = "",
 
@@ -23,6 +25,8 @@ function RoundEdges({
   br_0?: boolean;
   bl_1?: boolean;
   bl_0?: boolean;
+  id?: string;
+  ref?: React.Ref<HTMLDivElement>;
   className?: string;
   __className?: string;
   children: React.ReactNode;
@@ -48,6 +52,8 @@ function RoundEdges({
     <div
       className={`w-fit text-sm flex flex-col ${__className}`}
       onClick={onClick}
+      id={id}
+      ref={ref}
     >
       {tr_1 && (
         <div className="transform rotate-270 w-fit self-end z-10">

@@ -12,5 +12,3 @@ export const transporter = nodemailer.createTransport({
     rejectUnauthorized: false, // Allow self-signed certificates
   },
 });
-
-export { transporter };

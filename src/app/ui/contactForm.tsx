@@ -1,7 +1,7 @@
 "use client";
 
 import { sendMail } from "@/lib/actions";
-import React, { useActionState, useEffect } from "react";
+import React, { useActionState } from "react";
 import Lottie from "lottie-react";
 import loader from "@/utils/loader.json";
 
@@ -11,13 +11,6 @@ function ContactForm() {
     success: false,
     error: "",
   });
-
-  useEffect(() => {
-    if (pending) {
-      console.log("Message sent successfully!", state);
-      // Handle success, e.g., show a success message or redirect
-    }
-  }, [pending]);
 
   return (
     <div>

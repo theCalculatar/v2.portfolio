@@ -103,7 +103,7 @@ function Page() {
               frameworks to backend systems, databases, and dev tools that power
               my builds.
             </p>
-            <div className="p-6 bg-card-background rounded-2xl mt-6 outline-1 flex flex-wrap justify-start gap-4 backdrop-blur-2xl">
+            <div className="p-6 bg-card-background rounded-2xl mt-6 outline-1 flex justify-center md:justify-normal flex-wrap gap-4 backdrop-blur-2xl">
               {data.tools.map((tool, index) => {
                 return (
                   <Image

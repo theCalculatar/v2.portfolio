@@ -9,6 +9,30 @@ import data from "@/data/data.json";
 
 function Navbar({ className = "" }: { className?: string }) {
   const { navDispach, navState } = useContext(AppContext);
+  const navItemsRef = React.useRef<HTMLDivElement>(null);
+  const toogleBtnRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        !navState.isNavOpen ||
+        toogleBtnRef.current?.contains(event.target as Node)
+      ) {
+        return;
+      }
+      if (
+        navItemsRef.current &&
+        !navItemsRef.current.contains(event.target as Node)
+      ) {
+        navDispach({ type: NAVOPEN, payload: false });
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [navDispach, navState]);
 
   return (
     <div className={`overflow-hidden w-full z-10 ${className}`}>
@@ -51,6 +75,7 @@ function Navbar({ className = "" }: { className?: string }) {
             tl_0
             className="h-9 xl:h-10 xl:text-lg px-4 flex items-center justify-center bg-background z-10 cursor-pointer"
             onClick={() => navDispach(NAVOPEN)}
+            ref={toogleBtnRef}
           >
             <div>
               {navState.isNavOpen ? (
@@ -74,6 +99,7 @@ function Navbar({ className = "" }: { className?: string }) {
           className={`bg-white w-full absolute top-0 right-0 left-0 rounded-b-2xl pt-14 px-4 pb-4 text-black text-sm z-1 ${
             navState ? "lee" : "not"
           }`}
+          ref={navItemsRef}
         >
           <div className="grid grid-cols-2 grid-rows-2 gap-4">
             <Link
