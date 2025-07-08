@@ -61,7 +61,7 @@ function Hero() {
 
           <div className="flex gap-2">
             <Image
-              src={"/images/lee.jpeg"}
+              src={"/images/hardy.png"}
               width={40}
               height={40}
               alt="lee picture"
