@@ -4,6 +4,36 @@ import React from "react";
 import data from "@/data/data.json";
 import SlideUp from "@/components/SlideUp";
 import Container from "@/components/Container";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About | Alpheus Mabetlela",
+  description:
+    "Learn more about Alpheus Mabetlela — a full-stack software developer with a passion for building impactful digital solutions using Angular, React, Node.js, and more.",
+  openGraph: {
+    title: "About | Alpheus Mabetlela",
+    description:
+      "Discover Alpheus's background, skills, and journey in tech. From academic roots to hackathon wins and production-ready apps.",
+    url: "https://mahlane.vercel.app/about",
+    siteName: "Alpheus's Portfolio",
+    images: [
+      {
+        url: "https://mahlane.vercel.app/og/about.png",
+        width: 1200,
+        height: 630,
+        alt: "Alpheus Mabetlela About Preview",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About | Alpheus Mabetlela",
+    description:
+      "Full-stack dev. Hackathon winner. Builder of real-world software. Learn more about Alpheus Mabetlela.",
+    images: ["https://mahlane.vercel.app/twitter/about.png"],
+  },
+};
 
 function Page() {
   return (

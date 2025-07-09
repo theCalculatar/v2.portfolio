@@ -1,19 +1,40 @@
 // export const dynamic = "force-dynamic";
+import { Metadata, ResolvingMetadata } from "next";
 
 import React from "react";
-import data from "@/data/data.json";
 import { notFound } from "next/navigation";
 import { ArrowRight, Github } from "lucide-react";
 import Image from "next/image";
 import RoundEdges from "@/components/RoundEdges";
+import { getProject } from "@/lib/data";
 
 type Params = {
-  params: Promise<{ id: string }>;
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
-export default async function Work({ params }: Params) {
-  const { id } = await params;
-  const project = data.projects.find((project) => project.name === id) || null;
+export async function generateMetadata(
+  { params, searchParams }: Params,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { slug } = await params;
+
+  // fetch post information
+  const post = await getProject(slug);
+
+  if (!post) {
+    return {};
+  }
+
+  return {
+    title: post.name,
+    description: post.description,
+  };
+}
+
+export default async function Work({ params, searchParams }: Params) {
+  const { slug } = await params;
+  const project = (await getProject(slug)) || null;
 
   if (!project) {
     return notFound();

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import React from "react";
 import data from "@/data/data.json";
 import RoundEdges from "@/components/RoundEdges";
@@ -6,6 +7,35 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Container from "@/components/Container";
 import SlideUp from "@/components/SlideUp";
+
+export const metadata: Metadata = {
+  title: "Projects | Alpheus Mabetlela",
+  description:
+    "A collection of software projects by Alpheus Mabetlela — real-world apps, hackathon winners, and full-stack builds using Angular, React, Node.js, and more.",
+  openGraph: {
+    title: "Projects | Alpheus Mabetlela",
+    description:
+      "Browse Alpheus developer portfolio — full-stack apps, backend APIs, and award-winning builds.",
+    url: "https://mahlane.vercel.app/work",
+    siteName: "Alpheus's Portfolio",
+    images: [
+      {
+        url: "https://mahlane.vercel.app/images/mailaneng0.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Alpheus's Projects Preview",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Projects | Alpheus Mabetlela",
+    description:
+      "Full-stack builds, backend logic, and hackathon magic — peep Alpheus's work.",
+    images: ["https://mahlane.vercel.app/images/mailaneng0.jpg"],
+  },
+};
 
 export default function Work() {
   return (
@@ -32,7 +62,7 @@ export default function Work() {
               className="rounded-lg relative h-fit overflow-hidden project "
             >
               <Link
-                href={`work/${project.name}`}
+                href={`work/${project.slug}`}
                 className="transition-all duration-300"
               >
                 <div className="absolute top-0 left-0 z-10">
