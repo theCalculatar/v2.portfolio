@@ -1,5 +1,5 @@
 // export const dynamic = "force-dynamic";
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 
 import React from "react";
 import { notFound } from "next/navigation";
@@ -13,10 +13,7 @@ type Params = {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 };
 
-export async function generateMetadata(
-  { params, searchParams }: Params,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
 
   // fetch post information
@@ -32,7 +29,7 @@ export async function generateMetadata(
   };
 }
 
-export default async function Work({ params, searchParams }: Params) {
+export default async function Work({ params }: Params) {
   const { slug } = await params;
   const project = (await getProject(slug)) || null;
 
