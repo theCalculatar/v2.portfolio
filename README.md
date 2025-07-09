@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img alt="Logo" src="https://raw.githubusercontent.com/theCalculatar/v2.portfolio/refs/heads/main/public/logo.svg" width="100" />
+</div>
 
-## Getting Started
+<h1 align="center">
+    mahlane.vercel.app – v2
+</h1>
 
-First, run the development server:
+---
+
+<p align="center">
+    Second version of my portfolio site, built with <a href="https://nextjs.org/">Next.js</a> and hosted on <a href="https://vercel.com/">
+    Vercel</a>.
+</p>
+
+<p align="center">
+    Old versions still out there
+</p>
+<p align="center">
+    <a href="https://vercel.com/theCalculatar/v2.portfolio" target="_blank">
+        <img src="https://vercelbadge.vercel.app/api/theCalculatar/v2.portfolio" alt="Vercel Status" />
+    </a>
+</p>
+
+</div>
+
+---
+
+## 🚨 Thinking of forking this? Read first.
+
+So, real talk — if you're vibing with this and wanna use it for your own portfolio, that's cool with me.
+**Just make sure theres proper attribution** — SUpaaaaa.
+
+I put serious time into this layout, flow, and code. If it helps you, that’s a win. Just give credit back by linking to [alpheusmabetlela](https://mahlane.vercel.app).
+
+Also, this was not buil with the intention of being a starter template. — so if you get stuck, check the [Next.js docs](https://nextjs.org/docs) or hit me up :).
+
+### TL;DR
+
+Fork it. Remix it. Ship it.
+Just link back to **[alpheusmabetlela](https://mahlane.vercel.app)**. Respect the source.
+
+---
+
+## 🛠 Setup & Dev
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run in dev mode
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Build the app
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Preview production build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm start
+```
