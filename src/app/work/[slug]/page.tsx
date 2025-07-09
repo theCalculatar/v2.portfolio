@@ -20,7 +20,40 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const post = await getProject(slug);
 
   if (!post) {
-    return {};
+    return {
+      title: "Project Not Found",
+      description: "The project you are looking for does not exist.",
+      openGraph: {
+        title: "Project Not Found",
+        description: "The project you are looking for does not exist.",
+        url: `https://mahlane.vercel.app/work/${slug}`,
+        siteName: "Alpheus's Portfolio",
+        images: [
+          {
+            url: "/images/404.png",
+            width: 1200,
+            height: 630,
+            alt: "Project Not Found",
+          },
+        ],
+        type: "website",
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "Project Not Found",
+        description: "The project you are looking for does not exist.",
+        images: ["/images/404.png"],
+      },
+      icons: {
+        icon: "/favicon.ico",
+        shortcut: "/favicon.ico",
+        apple: "/favicon.ico",
+        other: {
+          rel: "apple-touch-icon",
+          url: "/favicon.ico",
+        },
+      },
+    };
   }
 
   return {
@@ -54,8 +87,9 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       other: {
         rel: "apple-touch-icon",
         url: "/favicon.ico",
-      }
-  }
+      },
+    },
+  };
 }
 
 export default async function Work({ params }: Params) {
