@@ -80,15 +80,6 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       description: post.description,
       images: [post.preview],
     },
-    icons: {
-      icon: "/favicon.ico",
-      shortcut: "/favicon.ico",
-      apple: "/favicon.ico",
-      other: {
-        rel: "apple-touch-icon",
-        url: "/favicon.ico",
-      },
-    },
   };
 }
 
