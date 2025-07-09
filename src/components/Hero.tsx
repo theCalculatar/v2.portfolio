@@ -54,49 +54,67 @@ function Hero() {
         </div>
       </SlideUp>
       <SlideUp>
-        <div className="flex flex-col p-6 mt-4 bg-card-background rounded-2xl gap-2">
-          <p className="text-sm lg:text-base text-font-primary">
-            Outstanding creativity & professional service from Dylut.-
-          </p>
-
-          <div className="flex gap-2">
+        <div className="flex p-6 mt-4 bg-card-background rounded-2xl gap-4 items-center">
+          <div className="relative ms-8 hidden md:block">
             <Image
-              src={"/images/hardy.png"}
-              width={40}
-              height={40}
-              alt="lee picture"
-              className="rounded-full bg-amber-500"
+              src={"/images/mailaneng1.jpg"}
+              width={100}
+              height={100}
+              alt="project picture"
+              className=""
             />
+            <Image
+              src={"/images/mailaneng0.jpg"}
+              width={100}
+              height={100}
+              alt="project picture"
+              className="absolute top-0 -left-8 -rotate-12"
+            />
+          </div>
+          <div className="flex flex-col gap-2">
+            <p className="text-sm lg:text-base text-font-primary">
+              Outstanding creativity & professional service from Dylut.-
+            </p>
 
-            <div className="flex flex-col justify-center gap-1">
-              <div className="flex gap-1">
-                <Star
-                  fill="#fe9a00"
-                  className="text-amber-500"
-                  width={15}
-                  height={15}
-                />
-                <Star
-                  fill="#fe9a00"
-                  className="text-amber-500"
-                  width={15}
-                  height={15}
-                />
-                <Star
-                  fill="#fe9a00"
-                  className="text-amber-500"
-                  width={15}
-                  height={15}
-                />
-                <Star
-                  fill="#fe9a00"
-                  className="text-amber-500"
-                  width={15}
-                  height={15}
-                />
-                <Star className="text-amber-500" width={15} height={15} />
+            <div className="flex gap-2">
+              <Image
+                src={"/images/hardy.png"}
+                width={40}
+                height={40}
+                alt="hardy picture"
+                className="rounded-full bg-amber-500"
+              />
+
+              <div className="flex flex-col justify-center gap-1">
+                <div className="flex gap-1">
+                  <Star
+                    fill="#fe9a00"
+                    className="text-amber-500"
+                    width={15}
+                    height={15}
+                  />
+                  <Star
+                    fill="#fe9a00"
+                    className="text-amber-500"
+                    width={15}
+                    height={15}
+                  />
+                  <Star
+                    fill="#fe9a00"
+                    className="text-amber-500"
+                    width={15}
+                    height={15}
+                  />
+                  <Star
+                    fill="#fe9a00"
+                    className="text-amber-500"
+                    width={15}
+                    height={15}
+                  />
+                  <Star className="text-amber-500" width={15} height={15} />
+                </div>
+                <p className="text-sm">Hardy Lutula</p>
               </div>
-              <p className="text-sm">Hardy Lutula</p>
             </div>
           </div>
         </div>

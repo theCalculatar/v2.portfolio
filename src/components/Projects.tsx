@@ -30,9 +30,10 @@ function Projects() {
           <div className="p-4 flex md:p-0 md:grid md:grid-cols-4 rounded-2xl marqueeContent gap-4">
             {data.projects.map((project, key) => {
               return (
-                <div
+                <a
                   className="w-full overflow-clip imageWrapper rounded-md flex-none grid-cols-none"
                   key={key}
+                  href={`/work/${project.name}`}
                 >
                   <Image
                     src={project.preview}
@@ -42,7 +43,7 @@ function Projects() {
                     className=" w-full hover:scale-105 transition-all duration-300"
                     style={{ objectFit: "fill" }}
                   />
-                </div>
+                </a>
               );
             })}
           </div>

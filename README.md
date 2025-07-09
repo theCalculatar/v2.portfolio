@@ -1,11 +1,10 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/theCalculatar/v2.portfolio/refs/heads/main/public/logo.svg" width="100" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/theCalculatar/v2.portfolio/refs/heads/main/public/demo-logo.png" width="100" />
 </div>
 
 <h1 align="center">
     mahlane.vercel.app – v2
 </h1>
-
 
 <p align="center">
     Second version of my portfolio site, built with <a href="https://nextjs.org/">Next.js</a> and hosted on <a href="https://vercel.com/">
@@ -23,7 +22,7 @@
 
 </div>
 
----
+![demo](https://raw.githubusercontent.com/theCalculatar/v2.portfolio/refs/heads/main/public/images/demo.png)
 
 ## 🚨 Thinking of forking this? Read first.
 
