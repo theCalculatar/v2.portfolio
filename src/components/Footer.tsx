@@ -132,9 +132,9 @@ function Footer() {
             <ul className="text-center">
               <h6 className="my-1 dark:text-black text-white">Utility</h6>
               <li>
-                <a href="" className="text-sm">
+                <Link href="/404" className="text-sm">
                   404
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

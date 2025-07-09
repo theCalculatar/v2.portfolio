@@ -96,7 +96,7 @@ function Hero() {
                 />
                 <Star className="text-amber-500" width={15} height={15} />
               </div>
-              <p className="text-sm">Lutuli Hardy</p>
+              <p className="text-sm">Hardy Lutula</p>
             </div>
           </div>
         </div>
