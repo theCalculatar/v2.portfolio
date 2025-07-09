@@ -6,7 +6,6 @@
     mahlane.vercel.app – v2
 </h1>
 
----
 
 <p align="center">
     Second version of my portfolio site, built with <a href="https://nextjs.org/">Next.js</a> and hosted on <a href="https://vercel.com/">
@@ -40,8 +39,6 @@ Also, this was not buil with the intention of being a starter template. — so i
 Fork it. Remix it. Ship it.
 Just link back to **[alpheusmabetlela](https://mahlane.vercel.app)**. Respect the source.
 
----
-
 ## 🛠 Setup & Dev
 
 ### Install dependencies
@@ -55,8 +52,6 @@ npm install
 ```bash
 npm run dev
 ```
-
----
 
 ## 🚀 Production Build
 
