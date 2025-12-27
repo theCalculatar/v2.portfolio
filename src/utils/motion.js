@@ -47,6 +47,24 @@ const popIn = {
   show: { scale: 1, opacity: 1 },
 };
 
+export const mouseNavigation = {
+  hidden: {
+    top: 8,
+    bottom: "auto",
+    transition: {
+      delay: 1.5,
+      duration: 0.4,
+    },
+  },
+  show: {
+    bottom: 8,
+    top: "auto",
+    transition: {
+      delay: 0.3,
+      duration: 0.3,
+    },
+  },
+};
 export {
   containerVariants,
   initialChild,
@@ -54,4 +72,5 @@ export {
   slideUp,
   fipperContainer,
   popIn,
+  mouseNavigation,
 };

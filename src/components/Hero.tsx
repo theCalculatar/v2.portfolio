@@ -3,14 +3,15 @@ import Link from "next/link";
 import React from "react";
 import Container from "./Container";
 import dynamic from "next/dynamic";
+import MouseButton from "./MouseButton";
 
 const SlideUp = dynamic(() => import("@/components/SlideUp"), {});
 
 function Hero() {
   return (
     <Container as="section" id="hero">
-      <SlideUp className=" bg-card-background h-[44rem] md:h-[48rem] flex place-items-center rounded-2xl">
-        <div className="w-full pt-32 px-6 rounded-2xl">
+      <SlideUp className=" bg-card-background h-[80vh] min-h-[40rem] md:h-[48rem] flex place-items-center rounded-2xl">
+        <div className="w-full pt-28 md:pt-32 px-6 rounded-2xl">
           <div className="flex gap-4 justify-center">
             <div className="bg-yellow-600 h-32 w-32 -rotate-6 mt-3"></div>
             <div className="bg-white h-28 w-32 relative rounded-md  shadow-2xl">
@@ -21,25 +22,27 @@ function Hero() {
                 className="rounded-xl object-cover object-top select-none p-1.5 "
               />
             </div>
-            <div className="bg-black h-36 w-32 rotate-6 mt-3 flex justify-center flex-col px-2">
-              <Link
-                href="/about"
-                className="text-white text-sm md:text-base hover:scale-95 transition-all duration-300"
-              >
-                — About
-              </Link>
-              <Link
-                href={"/work"}
-                className="text-white text-sm md:text-base hover:scale-95 transition-all duration-300"
-              >
-                — Work
-              </Link>
-              <Link
-                href={"#services"}
-                className="text-white text-sm md:text-base hover:scale-95 transition-all duration-300"
-              >
-                — Services
-              </Link>
+            <div className="bg-black h-36 w-32 rotate-6 mt-3 p-1">
+              <div className="md:p-2 x border-1 rounded-md border-white w-full h-full flex justify-center flex-col">
+                <Link
+                  href="/about"
+                  className="text-white text-sm md:text-base hover:scale-95 transition-all duration-300"
+                >
+                  — About
+                </Link>
+                <Link
+                  href={"/work"}
+                  className="text-white text-sm md:text-base hover:scale-95 transition-all duration-300"
+                >
+                  — Work
+                </Link>
+                <Link
+                  href={"#services"}
+                  className="text-white text-sm md:text-base hover:scale-95 transition-all duration-300"
+                >
+                  — Services
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -66,6 +69,9 @@ function Hero() {
           </div>
         </div>
       </SlideUp>
+      <div className="flex justify-center mt-8">
+        <MouseButton />
+      </div>
     </Container>
   );
 }

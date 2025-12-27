@@ -121,7 +121,7 @@ export default async function Work({ params }: Params) {
       </div>
 
       <div className="rounded-2xl overflow-clip relative">
-        <div className="grid gap-4 lg:grid-cols-3 grid-cols-2">
+        <div className="grid gap-1 md:gap-4 lg:grid-cols-3 grid-cols-2">
           {project.images?.map((image, index) => {
             return (
               <div className=" overflow-clip rounded-md" key={index}>

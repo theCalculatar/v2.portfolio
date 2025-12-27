@@ -23,14 +23,13 @@ function Projects() {
         </div>
       </SlideUp>
 
-      <SlideUp className="mt-10">
-        <div className="w-full overflow-hidden md:overflow-auto hide-scrollbar">
-          <div className="p-4 flex md:p-0 md:grid md:grid-cols-4 rounded-2xl marqueeContent gap-4">
-            {data.projects.map((project, key) => {
-              return (
+      <div className="w-full overflow-hidden md:overflow-auto hide-scrollbar">
+        <div className="p-4 flex md:p-0 md:grid md:grid-cols-4 rounded-2xl marqueeContent gap-4">
+          {data.projects.map((project, key) => {
+            return (
+              <SlideUp className="mt-10 flex-none grid-cols-none" key={key}>
                 <a
-                  className="w-full overflow-clip imageWrapper rounded-md flex-none grid-cols-none"
-                  key={key}
+                  className="w-full overflow-clip imageWrapper rounded-md "
                   href={`/work/${project.name}`}
                 >
                   <Image
@@ -42,10 +41,11 @@ function Projects() {
                     style={{ objectFit: "fill" }}
                   />
                 </a>
-              );
-            })}
-          </div>
-          <style>{`
+              </SlideUp>
+            );
+          })}
+        </div>
+        <style>{`
           .marqueeContent {
             animation: scroll 10s linear infinite;
           }
@@ -61,8 +61,7 @@ function Projects() {
             }
           }
         `}</style>
-        </div>
-      </SlideUp>
+      </div>
     </Container>
   );
 }
