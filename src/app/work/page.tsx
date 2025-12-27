@@ -45,7 +45,7 @@ export default function Work() {
           <h1 className="capitalize max-w-sm flex mt-6 font-light text-3xl text-balance">
             Work
           </h1>
-          <p className="text-sm max-w-3xl">
+          <p className="max-w-3xl">
             A curated collection of my latest projects — each crafted with a
             blend of creativity, technical precision, and attention to detail.
             From practical tools to innovative solutions, these works reflect my
@@ -66,7 +66,11 @@ export default function Work() {
                 className="transition-all duration-300"
               >
                 <div className="absolute top-0 left-0 z-10">
-                  <RoundEdges bl_1 tr_0 className="bg-background px-4 title">
+                  <RoundEdges
+                    bl_1
+                    tr_0
+                    className="bg-background transition-all duration-300 px-4 title"
+                  >
                     <div className="flex justify-between gap-3 items-center ">
                       <p className="text-sm capitalize">{project.name}</p>
                       <ArrowRight
@@ -82,7 +86,7 @@ export default function Work() {
                   width={600}
                   height={300}
                   alt={`image ${project.name}`}
-                  className="hover:blur-sm hover:scale-105 transition-all duration-300"
+                  className="hover:scale-105 transition-all duration-300"
                 />
                 <style>
                   {`

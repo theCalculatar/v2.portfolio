@@ -35,7 +35,7 @@ function Navbar({ className = "" }: { className?: string }) {
   }, [navDispach, navState]);
 
   return (
-    <div className={`overflow-hidden w-full z-10 ${className}`}>
+    <div className={`overflow-hidden w-full container z-10 ${className}`}>
       <RoundEdges
         __className="w-full rounded-b-2xl text-font-primary"
         bl_1
@@ -46,49 +46,32 @@ function Navbar({ className = "" }: { className?: string }) {
             <div className=" flex items-center gap-2 ">
               <div className="flex gap-2 items-center">
                 <div className="w-6 h-6 xl:w-7 xl:h-7 bg-[url(/logo.svg)] dark:bg-[url(/logo-light.svg)] bg-center bg-no-repeat bg-contain" />
-                <TextFlip className="w-17.5 xl:text-lg xl:w-24">
+                <TextFlip className="w-17.5 text-xs xl:text-sm xl:w-24">
                   <Link href={"/"}>Alpheus</Link>
                   <Link href={"/"}>Mabetlela</Link>
                 </TextFlip>
               </div>
-              <div className="text-sm xl:text-md">
-                {data.slots !== 0 ? (
-                  <TextFlip>
-                    <p className="text-green-400">Available</p>
-                    <p className="text-green-400">
-                      <span className="flex gap-2 items-center">
-                        <span className="w-2 h-2 bg-green-400 rounded-full"></span>
-                        {data.slots} slots
-                      </span>
-                    </p>
-                  </TextFlip>
-                ) : (
-                  <TextFlip>
-                    <p className="text-red-500">Booked</p>
-                    <p className="text-red-500">Booked</p>
-                  </TextFlip>
-                )}
-              </div>
+          
             </div>
           </RoundEdges>
           <RoundEdges
             tl_0
             className="h-9 xl:h-10 xl:text-lg px-4 flex items-center justify-center bg-background z-10 cursor-pointer"
-            onClick={() => navDispach(NAVOPEN)}
             ref={toogleBtnRef}
           >
-            <div>
-              {navState.isNavOpen ? (
-                <TextFlip>
-                  <span>Close</span>
-                  <span>Close</span>
+            <div className="flex gap-2 md:gap-4 pr-4 text-xs md:text-sm">
+              <Link href={"/work"} className="px-2 md:px-3 py-2 text-center">
+                <TextFlip className="text-center justify-center">
+                  <p className="text-xs md:text-sm">Work</p>
+                  <p className="text-xs md:text-sm">Work</p>
                 </TextFlip>
-              ) : (
-                <TextFlip>
-                  <span>Menu</span>
-                  <span>Open</span>
+              </Link>
+              <Link href={"/about"} className="px-2 md:px-3 py-2 text-center">
+                <TextFlip className="text-center justify-center">
+                  <p className="text-xs md:text-sm">About</p>
+                  <p className="text-xs md:text-sm">About</p>
                 </TextFlip>
-              )}
+              </Link>
             </div>
           </RoundEdges>
         </div>
@@ -118,24 +101,6 @@ function Navbar({ className = "" }: { className?: string }) {
               <TextFlip className="text-center justify-center">
                 <p className="text-sm">About</p>
                 <p className="text-sm">About</p>
-              </TextFlip>
-            </Link>
-            <Link
-              href={"/about#technology"}
-              className="bg-neutral-200 rounded-md py-2 text-center"
-            >
-              <TextFlip className="text-center justify-center">
-                <p className="text-sm">technologies</p>
-                <p className="text-sm">technologies</p>
-              </TextFlip>
-            </Link>
-            <Link
-              href={"/contact"}
-              className="bg-neutral-200 rounded-md py-2 text-center"
-            >
-              <TextFlip className="text-center justify-center">
-                <p className="text-sm">Contact</p>
-                <p className="text-sm">Contact</p>
               </TextFlip>
             </Link>
           </div>

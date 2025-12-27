@@ -92,7 +92,7 @@ export default async function Work({ params }: Params) {
   }
 
   return (
-    <div className="flex flex-col gap-4">
+    <article className="flex flex-col gap-4">
       <div className="flex px-6 pt-28 pb-8 bg-card-background rounded-2xl flex-col gap-4">
         <h1 className="capitalize max-w-sm flex mt-6 font-light text-3xl text-balance">
           {project.name}
@@ -121,13 +121,21 @@ export default async function Work({ params }: Params) {
       </div>
 
       <div className="rounded-2xl overflow-clip relative">
-        <Image
-          src={project.preview}
-          alt={project.name}
-          width={400}
-          height={400}
-          style={{ width: "100%", objectFit: "cover" }}
-        />
+        <div className="grid gap-4 lg:grid-cols-3 grid-cols-2">
+          {project.images?.map((image, index) => {
+            return (
+              <div className=" overflow-clip rounded-md" key={index}>
+                <Image
+                  src={image}
+                  alt={`${project.name} screenshot ${index + 1}`}
+                  width={600}
+                  height={400}
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
+            );
+          })}
+        </div>
         <div className="absolute bottom-0 right-0">
           <RoundEdges
             className="bg-background px-4 text-font-primary"
@@ -140,33 +148,16 @@ export default async function Work({ params }: Params) {
       </div>
 
       <div className="p-6 rounded-2xl bg-card-background flex flex-col gap-8">
-        <h1 className="capitalize max-w-sm flex mt-6 font-light text-3xl">
+        <h2 className="capitalize max-w-sm flex mt-6 font-light text-3xl">
           About
-        </h1>
-        <p className="text-pretty">{project.about}</p>
-      </div>
-
-      <div className="mt-4">
-        <h2 className="flex gap-4">
-          Gallery <ArrowRight width={15} className="rotate-90" />
         </h2>
+        <p className="text-pretty mt-6 text-gray-500">{project.about}</p>
+        {project.demo && (
+          <a href={project.demo} target="_blank" className="rounded-md text-sm">
+            Preview site <ArrowRight className="inline-block ml-2" size={15} />
+          </a>
+        )}
       </div>
-
-      <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2">
-        {project.images?.map((image, index) => {
-          return (
-            <div className=" overflow-clip rounded-md" key={index}>
-              <Image
-                src={image}
-                alt={`gallery-${index}`}
-                width={400}
-                height={200}
-                style={{ width: "100%" }}
-              />
-            </div>
-          );
-        })}
-      </div>
-    </div>
+    </article>
   );
 }

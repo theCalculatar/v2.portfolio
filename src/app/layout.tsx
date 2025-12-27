@@ -62,9 +62,9 @@ export default function RootLayout({
     <html lang="en">
       <ContextProvider>
         <body
-          className={`${poppoinsMono.variable} ${poppoinsSans.variable} antialiased p-4 relative md:px-8 lg:px-20 xl:px-48`}
+          className={`${poppoinsMono.variable} ${poppoinsSans.variable} antialiased px-4 relative md:px-8 lg:px-20 xl:px-48`}
         >
-          <header className="absolute left-4 right-4 md:left-8 md:right-8 lg:right-20 lg:left-20 xl:left-48 xl:right-48">
+          <header className="fixed top-0 z-[999] left-4 right-4 md:left-8 md:right-8 lg:right-20 lg:left-20 xl:left-48 xl:right-48">
             <Navbar className="" />
           </header>
           {children}

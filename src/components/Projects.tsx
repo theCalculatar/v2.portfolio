@@ -9,15 +9,14 @@ const SlideUp = dynamic(() => import("@/components/SlideUp"), {});
 
 function Projects() {
   return (
-    <Container>
-      <SlideUp>
-        <div className="py-4 mt-6 rounded-2xl flex flex-col  gap-4 ">
+    <Container show="bit" as="section" id="projects">
+      <SlideUp className="mt-40">
+        <div className="py-4 mt-6 rounded-2xl flex flex-col items-center  gap-4 ">
           <h2 className="flex gap-2 justify-start items-center text-xl">
-            Projects
-            <ArrowDown height={15} width={15} className="-rotate-135" />
+            — Projects
           </h2>
 
-          <p className="text-sm lg:text-base text-pretty max-w-3xl">
+          <p className="text-sm lg:text-base text-pretty max-w-2xl">
             Through each project, I&apos;ve learned, evolved, and uncovered new
             ways to think and build, shaping not just my skills, but my
             perspective.
@@ -25,7 +24,7 @@ function Projects() {
         </div>
       </SlideUp>
 
-      <SlideUp>
+      <SlideUp className="mt-10">
         <div className="w-full overflow-hidden md:overflow-auto hide-scrollbar">
           <div className="p-4 flex md:p-0 md:grid md:grid-cols-4 rounded-2xl marqueeContent gap-4">
             {data.projects.map((project, key) => {

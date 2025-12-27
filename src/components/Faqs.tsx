@@ -8,31 +8,31 @@ const SlideUp = dynamic(() => import("@/components/SlideUp"), {});
 
 function Projects() {
   return (
-    <Container >
+    <Container as="section" id="faqs" aria-labelledby="faqs-title">
       <SlideUp>
-        <div className="py-4 mt-6 rounded-2xl flex gap-2 items-center">
-          <h2>FAQ&apos;s </h2>
-          <ArrowDown height={15} width={15} />
+        <div className="py-4 mt-48 rounded-2xl flex flex-col gap-2 items-center">
+          <h2>— FAQ&apos;s </h2>
+          <p>Common questions around process, timelines, and collaboration.</p>
         </div>
       </SlideUp>
 
-      <div className="flex flex-col gap-4 mt-4">
+      <div className="flex flex-col gap-4 mt-10">
         {data.faqs.map((faq, index) => {
           return (
             <SlideUp key={index}>
               <details className="group faq bg-card-background rounded-md px-6 py-4">
                 <summary className="flex justify-between items-center cursor-pointer list-none text-font-primary">
-                  <h6>{faq.question}</h6>
-                  <div className="px-1 rounded-md bg-neutral-800">
+                  {faq.question}
+                  <div className="px-1 rounded-md">
                     <Plus
                       width={15}
-                      className="transition-transform group-open:rotate-45 text-white"
+                      className="transition-transform group-open:rotate-45"
                     />
                   </div>
                 </summary>
 
-                <div className="grid transition-all duration-300 ease-in-out group-open:opacity-100 group-open:scale-y-100 opacity-0 scale-y-0 origin-top text-sm">
-                  <p className="mt-2">{faq.answer}</p>
+                <div className="mt-2 text-sm">
+                  <p>{faq.answer}</p>
                 </div>
               </details>
             </SlideUp>
