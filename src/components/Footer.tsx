@@ -90,11 +90,6 @@ function Footer() {
                   About
                 </a>
               </li>
-              <li>
-                <a href="/contact" className="text-sm">
-                  Contact
-                </a>
-              </li>
             </ul>
 
             <ul className="text-center">
@@ -106,7 +101,7 @@ function Footer() {
               </li>
               <li>
                 <Link href="/work/restviz" className="text-sm">
-                  Work Single
+                  Proud Work
                 </Link>
               </li>
             </ul>

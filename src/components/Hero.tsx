@@ -49,7 +49,7 @@ function Hero() {
           <div className=" w-full">
             <h1 className="mx-auto max-w-sm md:max-w-xl xl:max-w-7xl text-center mt-6 font-normal text-4xl xl:text-6xl text-primary ">
               <span className="text-gray-500">Hi, I am Alpheus, </span>I build
-              cool things that lives on the internet,{" "}
+              cool things that live on the internet,{" "}
               <span className="text-gray-500">with modern interfaces.</span>
             </h1>
           </div>
