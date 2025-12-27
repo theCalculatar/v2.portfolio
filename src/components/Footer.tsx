@@ -1,6 +1,5 @@
-import { File, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { File, Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
-import TextFlip from "./TextFlip";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "./Container";
