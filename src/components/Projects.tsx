@@ -9,7 +9,7 @@ const SlideUp = dynamic(() => import("@/components/SlideUp"), {});
 function Projects() {
   return (
     <Container show="bit" as="section" id="projects">
-      <SlideUp className="mt-40">
+      <SlideUp className="pt-40">
         <div className="py-4 mt-6 rounded-2xl flex flex-col items-center  gap-4 ">
           <h2 className="flex gap-2 justify-start items-center text-xl">
             — Projects
