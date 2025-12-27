@@ -103,7 +103,7 @@ export default async function Work({ params }: Params) {
             <a
               href={project.demo}
               target="_blank"
-              className="py-2 px-4 dark:bg-white rounded-md text-sm dark:text-black "
+              className="py-2 px-4 bg-black text-white rounded-md text-sm"
             >
               Preview site
             </a>
@@ -112,7 +112,7 @@ export default async function Work({ params }: Params) {
             <a
               href={project.github}
               target="_blank"
-              className="flex items-center gap-2 py-2 px-4 dark:bg-black rounded-md text-sm text-font-primary"
+              className="flex items-center gap-2 py-2 px-4 rounded-md text-sm text-font-primary"
             >
               GitHub <Github width={15} />
             </a>

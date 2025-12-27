@@ -10,7 +10,7 @@ const SlideUp = dynamic(() => import("@/components/SlideUp"), {});
 function Hero() {
   return (
     <Container as="section" id="hero">
-      <SlideUp className=" bg-card-background h-[80vh] min-h-[40rem] md:h-[48rem] flex place-items-center rounded-2xl">
+      <SlideUp className="bg-card-background h-[80vh] min-h-[40rem] md:h-[48rem] flex place-items-center rounded-2xl">
         <div className="w-full pt-28 md:pt-32 px-6 rounded-2xl">
           <div className="flex gap-4 justify-center">
             <div className="bg-yellow-600 h-32 w-32 -rotate-6 mt-3"></div>
@@ -56,7 +56,7 @@ function Hero() {
           <div className="mt-8 xl:mt-14 flex gap-4 max-w-sm text-center mx-auto">
             <Link
               href="/contact"
-              className="py-2 px-4 text-white dark:bg-white bg-black dark:text-black rounded-md text-sm w-full"
+              className="py-2 px-4 text-white  bg-black rounded-md text-sm w-full"
             >
               Book a Call
             </Link>

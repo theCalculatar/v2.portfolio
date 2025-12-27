@@ -61,7 +61,7 @@ function Projects() {
 
                 <Link
                   href="/contact"
-                  className="py-2 mt-4 text-white bg-black dark:text-black text-sm mx-6 dark:bg-white rounded-md flex justify-center"
+                  className="py-2 mt-4 text-white bg-black text-sm mx-6 rounded-md flex justify-center"
                 >
                   Start a Project
                 </Link>

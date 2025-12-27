@@ -59,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="light">
       <ContextProvider>
         <body
           className={`${poppoinsMono.variable} ${poppoinsSans.variable} antialiased px-4 relative md:px-8 lg:px-20 xl:px-48`}

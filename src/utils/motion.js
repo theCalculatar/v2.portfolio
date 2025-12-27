@@ -47,7 +47,7 @@ const popIn = {
   show: { scale: 1, opacity: 1 },
 };
 
-export const mouseNavigation = {
+const mouseNavigation = {
   hidden: {
     top: 8,
     bottom: "auto",
