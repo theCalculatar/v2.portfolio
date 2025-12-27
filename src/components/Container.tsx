@@ -18,6 +18,7 @@ export default function Container({
   id?: string;
 }) {
   const amount = show === "tiny" ? 0.1 : show === "likkle" ? 0.2 : 0.3;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const MotionComponent = motion[as as keyof typeof motion] as any;
   return (
     <MotionComponent

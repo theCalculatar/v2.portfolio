@@ -1,4 +1,3 @@
-import { ArrowDown } from "lucide-react";
 import React from "react";
 import Container from "./Container";
 import dynamic from "next/dynamic";

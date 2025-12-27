@@ -13,6 +13,7 @@ export default function SlideUp({
   children: React.ReactNode;
   as?: keyof JSX.IntrinsicElements;
 }) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const MotionComponent = motion[as as keyof typeof motion] as any;
   return (
     <MotionComponent variants={slideUp} className={className}>

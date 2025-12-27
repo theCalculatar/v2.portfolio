@@ -1,4 +1,4 @@
-import { ArrowDown, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
 import React from "react";
 import Container from "./Container";
 import dynamic from "next/dynamic";

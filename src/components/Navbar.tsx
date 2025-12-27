@@ -5,7 +5,6 @@ import TextFlip from "@/components/TextFlip";
 import RoundEdges from "./RoundEdges";
 import { AppContext, NAVOPEN } from "@/app/context";
 import Link from "next/link";
-import data from "@/data/data.json";
 
 function Navbar({ className = "" }: { className?: string }) {
   const { navDispach, navState } = useContext(AppContext);
