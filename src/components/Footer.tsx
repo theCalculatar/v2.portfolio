@@ -1,6 +1,5 @@
-import { File, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { File, Github, Linkedin, Mail } from "lucide-react";
 import React from "react";
-import TextFlip from "./TextFlip";
 import Image from "next/image";
 import Link from "next/link";
 import Container from "./Container";
@@ -9,7 +8,7 @@ import PopUp from "./PopUp";
 function Footer() {
   return (
     <Container>
-      <div className="grid gap-4">
+      <div className="grid gap-4 mb-4">
         <ul className="grid gap-4 grid-cols-1 sm:grid-cols-2 mt-6 text-font-primary">
           <PopUp>
             <li className="rounded-md bg-card-background">
@@ -61,22 +60,7 @@ function Footer() {
           </PopUp>
         </ul>
 
-        <PopUp>
-          <a
-            href="/contact"
-            className="text-sm px-6 py-4 rounded-md flex justify-between items-center bg-black text-white dark:bg-white dark:text-black"
-          >
-            <p>Book a Call</p>
-            <TextFlip>
-              <span>
-                <Phone width={15} />
-              </span>
-              <span></span>
-            </TextFlip>
-          </a>
-        </PopUp>
-
-        <div className="p-6 bg-black dark:bg-white rounded-2xl dark:text-neutral-600">
+        <div className="p-6 bg-black rounded-2xl">
           <div className="flex gap-4 items-center">
             <Image
               src={"/images/lee.jpeg"}
@@ -86,18 +70,16 @@ function Footer() {
               className="rounded-full"
             />
             <div className="flex flex-col ">
-              <h6 className="text-lg text-white dark:text-black">
-                Alpheus Mabetlela
-              </h6>
+              <h6 className="text-lg text-white">Alpheus Mabetlela</h6>
               <p className="text-sm">Software Engineer</p>
             </div>
           </div>
 
           <hr className="mt-2 mx-8" />
 
-          <div className="mt-4 grid gap-4 sm:grid-cols-3 sm:text-start">
+          <div className="mt-4 grid gap-4 sm:grid-cols-3 sm:text-start ">
             <ul className="text-center">
-              <h6 className="my-1 text-white dark:text-black">Pages</h6>
+              <h6 className="my-1 text-white">Pages</h6>
               <li>
                 <Link href="/" className="text-sm">
                   Home
@@ -116,7 +98,7 @@ function Footer() {
             </ul>
 
             <ul className="text-center">
-              <h6 className="my-1 text-white dark:text-black">CMS</h6>
+              <h6 className="my-1 text-white">CMS</h6>
               <li>
                 <Link href="/work" className="text-sm">
                   Work
@@ -130,7 +112,7 @@ function Footer() {
             </ul>
 
             <ul className="text-center">
-              <h6 className="my-1 dark:text-black text-white">Utility</h6>
+              <h6 className="my-1  text-white">Utility</h6>
               <li>
                 <Link href="/404" className="text-sm">
                   404
@@ -138,7 +120,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <p className="text-center mt-6 text-white dark:text-black w-full text-xs">
+          <p className="text-center mt-6 text-white w-full text-xs">
             &copy; Developed by Alpheus
           </p>
         </div>

@@ -1,124 +1,77 @@
-import { Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Container from "./Container";
 import dynamic from "next/dynamic";
+import MouseButton from "./MouseButton";
 
 const SlideUp = dynamic(() => import("@/components/SlideUp"), {});
 
 function Hero() {
   return (
-    <Container>
-      <SlideUp>
-        <div className="w-full bg-card-background pt-32 px-6  pb-8 rounded-2xl">
-          <div className="flex gap-4 items-center xl:mt-20">
-            <Image
-              src={"/images/lee.jpeg"}
-              width={50}
-              height={50}
-              alt="my portrait"
-              className="rounded-full"
-            />
-            <div className="flex flex-col">
-              <h6 className="text-lg text-black dark:text-white">
-                Alpheus Mabetlela
-              </h6>
-              <p className="text-sm">Software Engineer</p>
+    <Container as="section" id="hero">
+      <SlideUp className="bg-card-background h-[80vh] min-h-[40rem] md:h-[48rem] flex place-items-center rounded-2xl">
+        <div className="w-full pt-28 md:pt-32 px-6 rounded-2xl">
+          <div className="flex gap-4 justify-center">
+            <div className="bg-yellow-600 h-32 w-32 -rotate-6 mt-3"></div>
+            <div className="bg-white h-28 w-32 relative rounded-md  shadow-2xl">
+              <Image
+                src={"/images/lee.jpeg"}
+                fill
+                alt="my portrait"
+                className="rounded-xl object-cover object-top select-none p-1.5 "
+              />
+            </div>
+            <div className="bg-black h-36 w-32 rotate-6 mt-3 p-1">
+              <div className="md:p-2 x border-1 rounded-md border-white w-full h-full flex justify-center flex-col">
+                <Link
+                  href="/about"
+                  className="text-white text-sm md:text-base hover:scale-95 transition-all duration-300"
+                >
+                  — About
+                </Link>
+                <Link
+                  href={"/work"}
+                  className="text-white text-sm md:text-base hover:scale-95 transition-all duration-300"
+                >
+                  — Work
+                </Link>
+                <Link
+                  href={"#services"}
+                  className="text-white text-sm md:text-base hover:scale-95 transition-all duration-300"
+                >
+                  — Services
+                </Link>
+              </div>
             </div>
           </div>
 
-          <h1 className="capitalize max-w-sm xl:max-w-3xl flex mt-6 font-light text-3xl xl:text-5xl text-balance">
-            Turning your wildest ideas into reality.
-          </h1>
-
-          <p className="mt-6 max-w-md">
-            Hi, I build web applications with clean code, smooth user
-            experiences, and modern interfaces
-          </p>
-
-          <div className="mt-8 xl:mt-14 flex gap-4 max-w-sm text-center">
+          <div className=" w-full">
+            <h1 className="mx-auto max-w-sm md:max-w-xl xl:max-w-7xl text-center mt-6 font-normal text-4xl xl:text-6xl text-primary ">
+              <span className="text-gray-500">Hi, I am Alpheus, </span>I build
+              cool things that lives on the internet,{" "}
+              <span className="text-gray-500">with modern interfaces.</span>
+            </h1>
+          </div>
+          <div className="mt-8 xl:mt-14 flex gap-4 max-w-sm text-center mx-auto">
             <Link
               href="/contact"
-              className="py-2 px-4 text-white dark:bg-white bg-black dark:text-black rounded-md text-sm w-full"
+              className="py-2 px-4 text-white  bg-black rounded-md text-sm w-full"
             >
               Book a Call
             </Link>
             <Link
               href="/work"
-              className="py-2 px-4 rounded-md text-sm text-font-primary bg-background w-full"
+              className="py-2 px-4 rounded-md text-sm text-gray-500 bg-background w-full"
             >
               View Work
             </Link>
           </div>
         </div>
       </SlideUp>
-      <SlideUp>
-        <div className="flex p-6 mt-4 bg-card-background rounded-2xl gap-4 items-center">
-          <div className="relative ms-8 hidden md:block">
-            <Image
-              src={"/images/mailaneng1.jpg"}
-              width={100}
-              height={100}
-              alt="project picture"
-              className=""
-            />
-            <Image
-              src={"/images/mailaneng0.jpg"}
-              width={100}
-              height={100}
-              alt="project picture"
-              className="absolute top-0 -left-8 -rotate-12"
-            />
-          </div>
-          <div className="flex flex-col gap-2">
-            <p className="text-sm lg:text-base text-font-primary">
-              Outstanding creativity & professional service from Dylut.-
-            </p>
-
-            <div className="flex gap-2">
-              <Image
-                src={"/images/hardy.png"}
-                width={40}
-                height={40}
-                alt="hardy picture"
-                className="rounded-full bg-amber-500"
-              />
-
-              <div className="flex flex-col justify-center gap-1">
-                <div className="flex gap-1">
-                  <Star
-                    fill="#fe9a00"
-                    className="text-amber-500"
-                    width={15}
-                    height={15}
-                  />
-                  <Star
-                    fill="#fe9a00"
-                    className="text-amber-500"
-                    width={15}
-                    height={15}
-                  />
-                  <Star
-                    fill="#fe9a00"
-                    className="text-amber-500"
-                    width={15}
-                    height={15}
-                  />
-                  <Star
-                    fill="#fe9a00"
-                    className="text-amber-500"
-                    width={15}
-                    height={15}
-                  />
-                  <Star className="text-amber-500" width={15} height={15} />
-                </div>
-                <p className="text-sm">Hardy Lutula</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SlideUp>
+      <div className="flex justify-center mt-8">
+        <MouseButton />
+      </div>
     </Container>
   );
 }

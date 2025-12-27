@@ -74,19 +74,18 @@
 
   "services": [
     {
-      "name": "Development",
-      "description": "I specialize in web development with a growing passion for Enterprise systems. I aim to write clean, maintainable code that not only functions well but also serves as a solid base for scalable and visually compelling software."
+      "name": "Web Development",
+      "description": "Modern web development focused on clean, maintainable, and scalable systems. Built with performance, structure, and long-term growth in mind."
     },
     {
-      "name": "Design",
-      "description": "Design goes beyond appearance, it’s about how something works and how it makes users feel. I create intuitive interfaces and seamless user experiences across digital platforms, blending form with function."
+      "name": "UI & Interface Design",
+      "description": "Designing intuitive, user-focused interfaces that balance visual clarity with usability, creating seamless experiences across digital platforms."
     },
     {
-      "name": "Involvement",
-      "description": "Active engagement in the tech community drives my growth. From hackathons and coding bootcamps to online forums, I stay connected to the pulse of technology learning, sharing, and evolving in an ever-changing field."
+      "name": "Technical Collaboration",
+      "description": "Hands-on collaboration across projects, communities, and teams, contributing through problem-solving, shared learning, and continuous improvement."
     }
   ],
-
   "faqs": [
     {
       "question": "Do you provide website maintenance after delivery?",
@@ -108,24 +107,27 @@
   "pricing": [
     {
       "type": "Landing Page",
-      "description": "A clean, responsive one-page site ideal for product launches, portfolios, or marketing campaigns. Includes animations, contact form.",
-      "price": 1500,
+      "description": "A clean, responsive one-page website suited for product launches, portfolios, or marketing campaigns. Includes basic animations and contact integration.",
+      "price": 5000,
+      "popular": false,
       "duration": "3–5 days",
-      "items": ["Design + Development", "React"]
+      "items": ["Design + Development", "Responsive Layout", "Basic SEO"]
     },
     {
-      "type": "Web Appication",
-      "description": "A modern frontend-only web application with dynamic UI, state management, API integrations and Basic SEO setup",
-      "price": 1800,
+      "type": "Web Application",
+      "description": "A modern, frontend-focused web application with dynamic UI, state management, and API integration. Built for performance and usability.",
+      "price": 8000,
+      "popular": true,
       "duration": "10–14 days",
-      "items": ["Design + Development", "React"]
+      "items": ["Design + Development", "React", "API Integration"]
     },
     {
-      "type": "Custom",
-      "description": "Multi-page website for small to medium businesses. Includes essential pages, responsive layout, SEO setup, and contact integration.",
-      "price": 9000,
-      "duration": "7–10 days",
-      "items": ["Design + Development", "NextJs"]
+      "type": "Custom Project",
+      "description": "A tailored web solution based on specific requirements, scope, and complexity. Suitable for businesses or products needing flexibility and scalability.",
+      "price": 15000,
+      "popular": false,
+      "duration": "Varies",
+      "items": ["Custom Scope", "Design + Development", "Flexible Stack"]
     }
   ],
   "certificates": [

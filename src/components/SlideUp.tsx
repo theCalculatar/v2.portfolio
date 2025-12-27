@@ -2,17 +2,22 @@
 
 import { slideUp } from "@/utils/motion";
 import { motion } from "framer-motion";
+import { JSX } from "react";
 
 export default function SlideUp({
   className = "",
   children,
+  as = "div",
 }: {
   className?: string;
   children: React.ReactNode;
+  as?: keyof JSX.IntrinsicElements;
 }) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const MotionComponent = motion[as as keyof typeof motion] as any;
   return (
-    <motion.div variants={slideUp} className={className}>
+    <MotionComponent variants={slideUp} className={className}>
       {children}
-    </motion.div>
+    </MotionComponent>
   );
 }
