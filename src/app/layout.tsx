@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ContextProvider } from "@/app/context";
+import Image from "next/image";
 
 const poppoinsSans = Poppins({
   variable: "--font-geist-sans",
@@ -68,9 +69,11 @@ export default function RootLayout({
             <Navbar className="" />
           </header>
           {children}
+
           <footer>
             <Footer />
           </footer>
+          {/* <div className="bg-blue-600/50 absolute z-10 inset-0">lee</div> */}
         </body>
       </ContextProvider>
     </html>

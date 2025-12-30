@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className=" relative">
+    <div className=" ">
       <Hero />
       <Projects />
       <Services />
