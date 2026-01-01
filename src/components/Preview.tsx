@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -9,14 +10,14 @@ function Preview({
   custom?: React.ReactNode;
 }) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [layoutId] = useState<string>(
+    () => "expandable-card" + crypto.randomUUID().split("-")[0]
+  );
+
   return (
     <div className="relative">
-      <motion.div
-        layoutId="expandable-card"
-        className="w-32 h-32 cursor-pointer"
-        onClick={() => setSelectedId("expandable-card")}
-      >
-        <motion.div className="bg-red-400 w-full h-8">{children}</motion.div>
+      <motion.div layoutId={layoutId} onClick={() => setSelectedId(layoutId)}>
+        {children}
       </motion.div>
       <AnimatePresence>
         {selectedId && (
@@ -31,7 +32,7 @@ function Preview({
             />
             {/* Expanded Item */}
             <motion.div
-              className="fixed inset-0 m-auto w-96 h-96 bg-white z-50 flex flex-col items-center justify-center shadow-xl rounded-xl"
+              className="fixed inset-0 m-auto w-96 h-56 md:w-2xl md:h-[26rem] bg-white z-50 flex flex-col items-center justify-center shadow-xl rounded-xl"
               onClick={() => setSelectedId(null)}
               layoutId={selectedId}
             >

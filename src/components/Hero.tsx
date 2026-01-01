@@ -4,6 +4,7 @@ import React from "react";
 import Container from "./Container";
 import dynamic from "next/dynamic";
 import MouseButton from "./MouseButton";
+import Preview from "./Preview";
 
 const SlideUp = dynamic(() => import("@/components/SlideUp"), {});
 
@@ -15,12 +16,16 @@ function Hero() {
           <div className="flex gap-4 justify-center">
             <div className="bg-yellow-600 h-32 w-32 -rotate-6 mt-3"></div>
             <div className="bg-white h-28 w-32 relative rounded-md  shadow-2xl">
-              <Image
-                src={"/images/lee.jpeg"}
-                fill
-                alt="my portrait"
-                className="rounded-xl object-cover object-top select-none p-1.5 "
-              />
+              <Preview>
+                <div className="w-32 h-28 cursor-pointer">
+                  <Image
+                    src={"/images/lee.jpeg"}
+                    fill
+                    alt="my portrait"
+                    className="rounded-xl h-full overflow-auto object-cover object-top select-none p-1.5 "
+                  />
+                </div>
+              </Preview>
             </div>
             <div className="bg-black h-36 w-32 rotate-6 mt-3 p-1">
               <div className="md:p-2 x border-1 rounded-md border-white w-full h-full flex justify-center flex-col">

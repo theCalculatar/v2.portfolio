@@ -5,6 +5,7 @@ import data from "@/data/data.json";
 import SlideUp from "@/components/SlideUp";
 import Container from "@/components/Container";
 import { Metadata } from "next";
+import Preview from "@/components/Preview";
 
 export const metadata: Metadata = {
   title: "About | Alpheus Mabetlela",
@@ -54,14 +55,16 @@ function Page() {
         <div className="grid md:grid-cols-2 md:gap-4">
           <SlideUp>
             <div className="h-72 rounded-2xl mt-6 overflow-clip relative">
-              <Image
-                src={"/images/lee.jpeg"}
-                style={{ height: "100%", width: "100%", objectFit: "cover" }}
-                width={600}
-                height={300}
-                alt={"image profile"}
-                className="md:object-top"
-              />
+              <Preview>
+                <div className="h-72 overflow-clip w-full">
+                  <Image
+                    src={"/images/lee.jpeg"}
+                    fill
+                    alt={"image profile"}
+                    className="object-top object-cover md:object-top w-full h-full rounded-2xl select-none"
+                  />
+                </div>
+              </Preview>
               <RoundEdges
                 className="bg-background"
                 __className="absolute bottom-0 right-0"
