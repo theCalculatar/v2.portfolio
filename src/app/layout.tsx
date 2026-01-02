@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ContextProvider } from "@/app/context";
-import Image from "next/image";
 
 const poppoinsSans = Poppins({
   variable: "--font-geist-sans",
