@@ -68,9 +68,11 @@ export default function RootLayout({
             <Navbar className="" />
           </header>
           {children}
+
           <footer>
             <Footer />
           </footer>
+          {/* <div className="bg-blue-600/50 absolute z-10 inset-0">lee</div> */}
         </body>
       </ContextProvider>
     </html>

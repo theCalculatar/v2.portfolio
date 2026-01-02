@@ -7,6 +7,7 @@ import { ArrowRight, Github } from "lucide-react";
 import Image from "next/image";
 import RoundEdges from "@/components/RoundEdges";
 import { getProject } from "@/lib/data";
+import Preview from "@/components/Preview";
 
 type Params = {
   params: Promise<{ slug: string }>;
@@ -124,15 +125,30 @@ export default async function Work({ params }: Params) {
         <div className="grid gap-1 md:gap-4 lg:grid-cols-3 grid-cols-2">
           {project.images?.map((image, index) => {
             return (
-              <div className=" overflow-clip rounded-md" key={index}>
-                <Image
-                  src={image}
-                  alt={`${project.name} screenshot ${index + 1}`}
-                  width={600}
-                  height={400}
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                />
-              </div>
+              <Preview
+                key={index}
+                custom={
+                  <div className="h-full w-full overflow-clip rounded-md">
+                    <Image
+                      src={image}
+                      width={1200}
+                      height={800}
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      alt={`${project.name} screenshot ${index + 1}`}
+                    ></Image>
+                  </div>
+                }
+              >
+                <div className=" h-full w-full overflow-clip rounded-md">
+                  <Image
+                    src={image}
+                    alt={`${project.name} screenshot ${index + 1}`}
+                    width={600}
+                    height={400}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+              </Preview>
             );
           })}
         </div>
